@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(ls -la /mnt/d/hitooshi_hp/design_file.html 2>/dev/null || echo \"File not found yet\")",
+      "PowerShell(Get-ChildItem \"D:\\\\hitooshi_hp\\\\assets\" | Select-Object Name, @{n='KB';e={[math]::Round\\($_.Length/1KB,1\\)}} | Format-Table)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(node -e ' *)",
+      "PowerShell(npx --yes playwright screenshot \"https://boisterous-bunny-2cdc6d.netlify.app/\" \"D:\\\\hitooshi_hp\\\\assets\\\\sample_haru_no_oto.png\" --viewport-size=\"1280,800\" --wait-for-timeout=5000 2>&1)"
+    ]
+  }
+}
