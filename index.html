@@ -186,6 +186,12 @@
     outline-offset: 3px;
     border-radius: 4px;
   }
+
+  /* #works 横スクロール用スクロールバー */
+  .works-scroll { scrollbar-width: thin; scrollbar-color: #d4bfb0 transparent; }
+  .works-scroll::-webkit-scrollbar { height: 4px; }
+  .works-scroll::-webkit-scrollbar-track { background: transparent; }
+  .works-scroll::-webkit-scrollbar-thumb { background: #d4bfb0; border-radius: 2px; }
 </style>
 </head>
 <body class="font-sans bg-cream text-ink">
@@ -594,11 +600,11 @@
       <p class="text-inkSoft mt-4 text-sm md:text-base">デザインの雰囲気や更新機能をぜひご確認ください。</p>
     </div>
 
-    <!-- grid: 1col → 2col(sm) → 3col(lg) / 最大5枚想定 -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- 横スクロール: カード幅固定 + overflow-x-auto / カードを追加するだけで5枚まで対応 -->
+    <div class="works-scroll flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth">
 
       <!-- ▼ SAMPLE 01 -->
-      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group">
+      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
         <!-- screenshot -->
         <a href="https://haru-no-oto-sample.vercel.app/" target="_blank" rel="noopener noreferrer"
            class="block aspect-[16/10] overflow-hidden bg-cream2 shrink-0">
@@ -643,7 +649,53 @@
         </div>
       </article>
 
-      <!-- ▼ SAMPLE 02〜05 は追加予定 -->
+      <!-- ▼ SAMPLE 02 -->
+      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
+        <!-- screenshot -->
+        <a href="https://rusty-pop-vintage.vercel.app/" target="_blank" rel="noopener noreferrer"
+           class="block aspect-[16/10] overflow-hidden bg-cream2 shrink-0">
+          <img
+            src="assets/sample_rusty_pop.png"
+            alt="RUSTY POP VINTAGE 古着屋 サンプルサイト"
+            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </a>
+        <!-- content -->
+        <div class="p-6 flex flex-col flex-1">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
+              <i class="fa-solid fa-shirt text-[10px]"></i> 古着屋
+            </span>
+          </div>
+          <h3 class="font-maru font-black text-lg leading-snug mb-2">RUSTY POP VINTAGE</h3>
+          <p class="text-sm text-inkSoft leading-relaxed flex-1">
+            アメカジ古着屋をテーマに、アメコミのようなポップさと力強いデザインを融合。マンガのコマ割り枠線で1点ものの魅力を引き立てた制作事例です。
+          </p>
+          <!-- app-updatable tags -->
+          <div class="mt-4 mb-2 flex flex-wrap gap-1.5">
+            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
+              <i class="fa-solid fa-rotate text-[9px]"></i> 新着アイテム
+            </span>
+            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
+              <i class="fa-solid fa-rotate text-[9px]"></i> セール情報
+            </span>
+            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
+              <i class="fa-solid fa-rotate text-[9px]"></i> 営業カレンダー
+            </span>
+          </div>
+          <p class="text-[11px] text-inkMute flex items-center gap-1 mb-4">
+            <i class="fa-solid fa-mobile-screen-button text-forest"></i>
+            <span>上記はアプリからカンタンに更新可能</span>
+          </p>
+          <a href="https://rusty-pop-vintage.vercel.app/" target="_blank" rel="noopener noreferrer"
+             class="mt-auto inline-flex items-center justify-center gap-2 bg-ink hover:bg-inkSoft text-white text-sm font-bold py-3 rounded-full transition">
+            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> サイトを見る
+          </a>
+        </div>
+      </article>
+
+      <!-- ▼ SAMPLE 03〜05 は追加予定 -->
 
     </div>
   </div>
