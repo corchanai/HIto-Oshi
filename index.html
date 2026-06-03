@@ -1286,53 +1286,98 @@
   })();
 </script>
 
-<!-- #works カルーセル自動スクロール -->
+<!-- #works カルーセル自動スクロール＋手動ドラッグ -->
 <script>
   (function () {
     var track = document.querySelector('.works-track');
     if (!track) return;
 
-    // カードを複製してシームレスループ用に末尾へ追加
-    var originals = Array.from(track.children);
-    originals.forEach(function (card) {
+    // カードを複製してシームレスループ
+    Array.from(track.children).forEach(function (card) {
       var clone = card.cloneNode(true);
       clone.setAttribute('aria-hidden', 'true');
       track.appendChild(clone);
     });
 
-    var pos = 0;
-    var paused = false;
+    var pos       = 0;
     var halfWidth = 0;
-    var speed = 0.5; // px / frame（約30px/s @ 60fps）
+    var speed     = 0.8;   // px/frame（少し速め）
+    var hovered   = false; // ホバー中は自動停止
+    var dragging  = false; // ドラッグ中
+    var dragStartX   = 0;
+    var dragStartPos = 0;
+    var didDrag      = false; // リンク誤クリック防止フラグ
 
-    function measure() {
-      halfWidth = track.scrollWidth / 2;
+    function norm(p) {
+      // pos を [0, halfWidth) に正規化
+      if (halfWidth === 0) return p;
+      p = p % halfWidth;
+      return p < 0 ? p + halfWidth : p;
     }
+    function measure() { halfWidth = track.scrollWidth / 2; }
 
     var wrap = track.parentElement;
-    // ホバー・タッチで一時停止
-    wrap.addEventListener('mouseenter', function () { paused = true; });
-    wrap.addEventListener('mouseleave', function () { paused = false; });
-    wrap.addEventListener('touchstart', function () { paused = true; }, { passive: true });
-    wrap.addEventListener('touchend', function () {
-      setTimeout(function () { paused = false; }, 1500);
-    }, { passive: true });
+    wrap.style.cursor     = 'grab';
+    wrap.style.userSelect = 'none';
 
+    /* ── ホバー停止 ── */
+    wrap.addEventListener('mouseenter', function () { hovered = true;  });
+    wrap.addEventListener('mouseleave', function () { hovered = false; });
+
+    /* ── マウスドラッグ ── */
+    wrap.addEventListener('mousedown', function (e) {
+      dragging     = true;
+      didDrag      = false;
+      dragStartX   = e.clientX;
+      dragStartPos = pos;
+      wrap.style.cursor = 'grabbing';
+      e.preventDefault();
+    });
+    document.addEventListener('mousemove', function (e) {
+      if (!dragging) return;
+      var delta = dragStartX - e.clientX;
+      if (Math.abs(delta) > 4) didDrag = true;
+      pos = norm(dragStartPos + delta);
+    });
+    document.addEventListener('mouseup', function () {
+      if (!dragging) return;
+      dragging = false;
+      wrap.style.cursor = 'grab';
+    });
+
+    /* ── タッチドラッグ ── */
+    wrap.addEventListener('touchstart', function (e) {
+      dragging     = true;
+      didDrag      = false;
+      dragStartX   = e.touches[0].clientX;
+      dragStartPos = pos;
+    }, { passive: true });
+    wrap.addEventListener('touchmove', function (e) {
+      if (!dragging) return;
+      var delta = dragStartX - e.touches[0].clientX;
+      if (Math.abs(delta) > 4) didDrag = true;
+      pos = norm(dragStartPos + delta);
+    }, { passive: true });
+    wrap.addEventListener('touchend', function () { dragging = false; }, { passive: true });
+
+    /* ドラッグした場合はカード内リンクのクリックをキャンセル */
+    wrap.addEventListener('click', function (e) {
+      if (didDrag) { e.preventDefault(); e.stopPropagation(); didDrag = false; }
+    }, true);
+
+    /* ── アニメーションループ ── */
     function tick() {
-      if (!paused) {
-        pos += speed;
-        if (pos >= halfWidth) pos -= halfWidth;
+      if (!dragging && !hovered) {
+        pos = norm(pos + speed);
       }
       track.style.transform = 'translateX(-' + pos + 'px)';
       requestAnimationFrame(tick);
     }
 
-    // DOM 確定後に計測してアニメ開始
     requestAnimationFrame(function () {
       measure();
       requestAnimationFrame(tick);
     });
-
     window.addEventListener('resize', measure);
   })();
 </script>
