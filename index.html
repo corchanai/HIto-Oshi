@@ -187,11 +187,9 @@
     border-radius: 4px;
   }
 
-  /* #works 横スクロール用スクロールバー */
-  .works-scroll { scrollbar-width: thin; scrollbar-color: #d4bfb0 transparent; }
-  .works-scroll::-webkit-scrollbar { height: 4px; }
-  .works-scroll::-webkit-scrollbar-track { background: transparent; }
-  .works-scroll::-webkit-scrollbar-thumb { background: #d4bfb0; border-radius: 2px; }
+  /* #works カルーセル */
+  .works-scroll { overflow: hidden; }
+  .works-track { display: flex; gap: 1.25rem; will-change: transform; }
 </style>
 </head>
 <body class="font-sans bg-cream text-ink">
@@ -600,8 +598,9 @@
       <p class="text-inkSoft mt-4 text-sm md:text-base">デザインの雰囲気や更新機能をぜひご確認ください。</p>
     </div>
 
-    <!-- 横スクロール: カード幅固定 + overflow-x-auto / カードを追加するだけで5枚まで対応 -->
-    <div class="works-scroll flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scroll-smooth">
+    <!-- カルーセル: JS で自動スクロール＆ループ / カードを追加するだけで対応 -->
+    <div class="works-scroll">
+      <div class="works-track py-3">
 
       <!-- ▼ SAMPLE 01 -->
       <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
@@ -831,7 +830,8 @@
         </div>
       </article>
 
-    </div>
+      </div><!-- /works-track -->
+    </div><!-- /works-scroll -->
   </div>
 </section>
 
@@ -1283,6 +1283,57 @@
     mql.addEventListener('change', function (e) {
       if (e.matches) closeMenu();
     });
+  })();
+</script>
+
+<!-- #works カルーセル自動スクロール -->
+<script>
+  (function () {
+    var track = document.querySelector('.works-track');
+    if (!track) return;
+
+    // カードを複製してシームレスループ用に末尾へ追加
+    var originals = Array.from(track.children);
+    originals.forEach(function (card) {
+      var clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+
+    var pos = 0;
+    var paused = false;
+    var halfWidth = 0;
+    var speed = 0.5; // px / frame（約30px/s @ 60fps）
+
+    function measure() {
+      halfWidth = track.scrollWidth / 2;
+    }
+
+    var wrap = track.parentElement;
+    // ホバー・タッチで一時停止
+    wrap.addEventListener('mouseenter', function () { paused = true; });
+    wrap.addEventListener('mouseleave', function () { paused = false; });
+    wrap.addEventListener('touchstart', function () { paused = true; }, { passive: true });
+    wrap.addEventListener('touchend', function () {
+      setTimeout(function () { paused = false; }, 1500);
+    }, { passive: true });
+
+    function tick() {
+      if (!paused) {
+        pos += speed;
+        if (pos >= halfWidth) pos -= halfWidth;
+      }
+      track.style.transform = 'translateX(-' + pos + 'px)';
+      requestAnimationFrame(tick);
+    }
+
+    // DOM 確定後に計測してアニメ開始
+    requestAnimationFrame(function () {
+      measure();
+      requestAnimationFrame(tick);
+    });
+
+    window.addEventListener('resize', measure);
   })();
 </script>
 
