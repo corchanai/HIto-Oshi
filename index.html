@@ -1,1479 +1,1176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HIto-Oshi（ヒトオシ）／ 宮城県北エリア・少人数のお店や会社専門のホームページ制作</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
-<!-- SEO: description / robots / canonical -->
-<meta name="description" content="おしゃべりでも、SNSメッセージのやり取りだけでも大丈夫。宮城県北エリア（大崎・登米・栗原・石巻）の個人・小規模事業者専門ホームページ制作。5万円から、制作中の修正は何度でも無料。HIto-Oshi（ヒトオシ）" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://hitooshi.jp/" />
-<link rel="icon" type="image/png" href="/hitooshi_favicon.png" />
-<meta name="google-site-verification" content="VjlxxtyrtHdAAlARP4IEVluNWID5tpqNhMoPQkkMtFc" />
-<link rel="dns-prefetch" href="//embedsocial.com" />
-<!-- OGP -->
-<meta property="og:type"        content="website" />
-<meta property="og:locale"      content="ja_JP" />
-<meta property="og:site_name"   content="HIto-Oshi（ヒトオシ）" />
-<meta property="og:title"       content="HIto-Oshi（ヒトオシ）｜宮城県北エリア・少人数のお店や会社専門ホームページ制作" />
-<meta property="og:description" content="おしゃべりでも、SNSメッセージのやり取りだけでも大丈夫。5万円から作れる、制作中の修正は何度でも無料のホームページ制作サービス。大崎・登米・栗原・石巻エリア密着。" />
-<meta property="og:url"         content="https://hitooshi.jp/" />
-<meta property="og:image"       content="https://hitooshi.jp/assets/01_sunset_landscape.png" />
-<!-- Twitter Card -->
-<meta name="twitter:card"        content="summary_large_image" />
-<meta name="twitter:title"       content="HIto-Oshi（ヒトオシ）｜宮城県北エリア・少人数のお店や会社専門ホームページ制作" />
-<meta name="twitter:description" content="おしゃべりでも、SNSメッセージのやり取りだけでも大丈夫。5万円から作れる、制作中の修正は何度でも無料のホームページ制作サービス。" />
-<meta name="twitter:image"       content="https://hitooshi.jp/assets/01_sunset_landscape.png" />
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          /* warm, natural palette */
-          cream:    "#fbf6ee",  /* page background */
-          cream2:   "#f5ead9",  /* alt panel */
-          paper:    "#ffffff",
-          ink:      "#2f3645",  /* dark slate */
-          inkSoft:  "#5a6273",
-          inkMute:  "#6b7280",
-          line:     "#ece0cb",
-          terra:    "#c46b4a",  /* terracotta */
-          terraDeep:"#9c4f33",
-          terraSoft:"#f4d8ca",
-          forest:   "#3f6b54",  /* deep forest green */
-          forestDeep:"#2c4d3c",
-          forestSoft:"#dfeadd",
-          butter:   "#f7e7b3",
-        },
-        fontFamily: {
-          sans: ['"Noto Sans JP"', "system-ui", "sans-serif"],
-          maru: ['"Zen Maru Gothic"', '"Noto Sans JP"', "sans-serif"],
-          mono: ['"Quicksand"', "ui-monospace", "monospace"],
-        },
-        boxShadow: {
-          soft: "0 12px 30px -20px rgba(47,54,69,0.25)",
-          card: "0 18px 40px -28px rgba(47,54,69,0.35)",
-          cta:  "0 12px 24px -10px rgba(196,107,74,0.45)",
-        },
-      },
-    },
-  };
-</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HIto-Oshi（ヒトオシ）｜宮城県北エリア・少人数のお店や会社専門のホームページ制作</title>
+<link rel="icon" type="image/png" href="hitooshi_favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<meta name="description" content="おしゃべりでも、SNSメッセージのやり取りだけでも大丈夫。宮城県北エリア（大崎・登米・栗原・石巻）の個人・小規模事業者専門ホームページ制作。5万円から、制作中の修正は何度でも無料。HIto-Oshi（ヒトオシ）">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="HIto-Oshi（ヒトオシ）">
+<meta property="og:title" content="HIto-Oshi（ヒトオシ）｜宮城県北エリア・少人数のお店や会社専門ホームページ制作">
+<meta property="og:description" content="おしゃべりでも、SNSメッセージのやり取りだけでも大丈夫。5万円から作れる、制作中の修正は何度でも無料のホームページ制作サービス。大崎・登米・栗原・石巻エリア密着。">
 <style>
-  html { scroll-behavior: smooth; }
-  body {
-    font-feature-settings: "palt" 1;
-    letter-spacing: 0.015em;
-    text-wrap: pretty;
-  }
-  .marker-terra {
-    background: linear-gradient(180deg, transparent 62%, #f4d8ca 62%);
-    padding: 0 4px;
-  }
-  .marker-forest {
-    background: linear-gradient(180deg, transparent 62%, #dfeadd 62%);
-    padding: 0 4px;
-  }
-  .num-circle {
-    background: radial-gradient(circle at 30% 30%, #f4d8ca 0%, #c46b4a 100%);
-  }
-  .hero-illu-stripe {
-    background-image: repeating-linear-gradient(
-      135deg,
-      rgba(196,107,74,0.10) 0 2px,
-      transparent 2px 14px
-    );
-  }
-  details[open] .acc-icon { transform: rotate(45deg); }
-  .acc-icon { transition: transform 0.2s ease; }
+  body { margin:0; padding:0; font-family:'Noto Sans JP',sans-serif; color:#1a1a1a; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
 
-  /* ============================================== */
-  /* EmbedSocial widget — fit-to-container (no scroll) */
-  /* ============================================== */
-  /* Force every nested grid/list to keep 4 columns and shrink tiles */
-  .es-feed-wrap [class*="grid"],
-  .es-feed-wrap ul {
-    display: grid !important;
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-    gap: 8px !important;
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
+  @keyframes fadeInUp {
+    from { opacity:0; transform:translateY(30px); }
+    to   { opacity:1; transform:translateY(0); }
   }
-  /* Each post tile becomes a flexible square */
-  .es-feed-wrap li,
-  .es-feed-wrap [class*="feed-item"],
-  .es-feed-wrap [class*="post"],
-  .es-feed-wrap a[class*="item"] {
-    aspect-ratio: 1 / 1 !important;
-    width: 100% !important;
-    height: auto !important;
-    min-width: 0 !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: hidden !important;
-    border-radius: 8px !important;
+  @keyframes fadeIn {
+    from { opacity:0; } to { opacity:1; }
   }
-  /* Images shrink to fit their tile */
-  .es-feed-wrap img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    display: block !important;
+  @keyframes floatUp {
+    from { opacity:0; transform:translateY(18px); }
+    to   { opacity:1; transform:translateY(0); }
   }
-  /* Hide captions / counts inside tiny tiles */
-  .es-feed-wrap [class*="caption"],
-  .es-feed-wrap [class*="description"],
-  .es-feed-wrap [class*="footer"],
-  .es-feed-wrap [class*="meta"],
-  .es-feed-wrap [class*="header"]:not(.es-widget-branding),
-  .es-feed-wrap [class*="load-more"],
-  .es-feed-wrap button {
-    display: none !important;
+  @keyframes popIn {
+    0%   { opacity:0; transform:scale(0.72); }
+    72%  { transform:scale(1.07); }
+    100% { opacity:1; transform:scale(1); }
   }
-  /* Only show first row of 4 posts */
-  .es-feed-wrap li:nth-child(n+5),
-  .es-feed-wrap [class*="feed-item"]:nth-child(n+5) {
-    display: none !important;
+  @keyframes markerDraw {
+    from { clip-path:inset(0 100% 0 0); }
+    to   { clip-path:inset(0 0 0 0); }
   }
-  .es-feed-wrap .es-widget-branding {
-    font-size: 10px;
-    opacity: 0.55;
-    margin-top: 6px;
+  .carousel-container {
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:#c46b4a #f0ece2;
+    cursor:grab;
+  }
+  .carousel-container.is-dragging { cursor:grabbing; }
+  .carousel-container::-webkit-scrollbar { height:8px; }
+  .carousel-container::-webkit-scrollbar-track { background:#f0ece2; border-radius:4px; }
+  .carousel-container::-webkit-scrollbar-thumb { background:#c46b4a; border-radius:4px; }
+
+  .carousel-track {
+    display:flex; gap:20px;
+    width:max-content;
   }
 
-  /* Mobile drawer animation */
-  #mobile-menu {
-    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateX(100%);
-  }
-  #mobile-menu.is-open { transform: translateX(0); }
-  #mobile-backdrop {
-    transition: opacity 0.32s ease;
-    opacity: 0;
-    pointer-events: none;
-  }
-  #mobile-backdrop.is-open {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  /* Hamburger icon morph */
-  .hb-line {
-    transition: transform 0.3s ease, opacity 0.2s ease;
-    transform-origin: center;
-  }
-  .hb-btn[aria-expanded="true"] .hb-line:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-  }
-  .hb-btn[aria-expanded="true"] .hb-line:nth-child(2) {
-    opacity: 0;
-  }
-  .hb-btn[aria-expanded="true"] .hb-line:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
-  /* Prevent body scroll when menu open */
-  body.menu-open { overflow: hidden; }
+  .problem-grid  { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .service-items { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .app-screens   { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; align-items:start; }
+  .plan-grid     { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .flow-steps    { display:grid; grid-template-columns:repeat(6,1fr); gap:6px; }
 
-  /* Offset sticky header (h-16 = 64px) when jumping to a section */
-  section[id], footer[id] { scroll-margin-top: 72px; }
+  .faq-q { cursor:pointer; user-select:none; }
+  .faq-q:hover { background:rgba(0,0,0,0.03) !important; }
 
-  /* Focus indicators (WCAG 2.1 AA) */
+  .btn-hover { transition:all .2s; }
+  .btn-hover:hover { opacity:0.88; transform:translateY(-2px); }
+
+  .work-card { transition:transform 0.3s ease, box-shadow 0.3s ease; }
+  .work-card:hover { transform:translateY(-8px); box-shadow:0 16px 36px rgba(0,0,0,0.14) !important; }
+
+  .marker-yellow {
+    position:relative; display:inline-block;
+  }
+  .marker-yellow::after {
+    content:''; position:absolute; bottom:0; left:-4px; right:-4px;
+    height:14px; background:#FFD419; opacity:0.5; border-radius:2px; z-index:0;
+  }
+  .marker-yellow > span { position:relative; z-index:1; }
+
+  .section-padding { padding:90px 40px; }
+
+  section[id] { scroll-margin-top:72px; }
+
+  @media(max-width:960px){
+    .problem-grid  { grid-template-columns:repeat(2,1fr) !important; }
+    .service-items { grid-template-columns:repeat(2,1fr) !important; }
+    .app-screens   { grid-template-columns:repeat(2,1fr) !important; }
+    .plan-grid     { grid-template-columns:1fr !important; }
+    .flow-steps    { grid-template-columns:repeat(3,1fr) !important; }
+    .hero-side-text{ display:none !important; }
+    .hero-chars    { display:none !important; }
+  }
+  @media(max-width:768px){
+    .section-padding { padding:56px 20px !important; }
+    .hero-section { min-height:auto !important; overflow:visible !important; }
+    .hero-inner { height:auto !important; display:flex; flex-direction:column; padding:20px 0 32px; }
+    .hero-chars { display:none !important; }
+    .hero-chars-mobile-row { display:flex !important; }
+    .hero-text {
+      position:relative !important; top:auto !important; left:auto !important;
+      width:100% !important; padding:24px 20px 0; order:1;
+    }
+    .hero-combined-device {
+      position:relative !important; bottom:auto !important; left:auto !important;
+      width:90% !important; max-width:420px;
+      margin:-70px auto 0 !important; order:3;
+    }
+    .hero-combined-device img { top:0 !important; }
+    .hero-cta { flex-direction:column !important; }
+    .section-2col { flex-direction:column !important; gap:28px !important; }
+    .section-label { flex:0 0 auto !important; text-align:center !important; }
+    .service-row { flex-direction:column !important; align-items:stretch !important; }
+    .service-illus { display:none !important; }
+    .app-row { flex-direction:column !important; align-items:stretch !important; }
+    .app-lady { display:none !important; }
+    .service-items, .app-screens { justify-content:center !important; }
+    .faq-left-col { display:none !important; }
+    .cta-inner { flex-direction:column !important; gap:36px !important; }
+    .cta-right-col { flex:0 0 auto !important; width:100% !important; }
+    .cta-plant { display:none !important; }
+    .header-tags { display:none !important; }
+    .section-2col { align-items:center !important; }
+    .section-2col > div { text-align:center !important; width:100% !important; }
+    .section-2col p, .section-2col h2 { text-align:center !important; }
+    .cta-main-copy { text-align:center !important; width:100% !important; }
+    .cta-main-copy h2, .cta-main-copy p { text-align:center !important; }
+    .cta-main-copy > div { margin-left:auto !important; margin-right:auto !important; }
+    .cta-card-row {
+      flex-direction:column !important;
+      align-items:center !important;
+      text-align:center !important;
+      gap:14px !important;
+    }
+    .cta-card-text { width:100% !important; }
+    .cta-card-img { width:76px !important; }
+    .works-header { flex-direction:column !important; align-items:center !important; text-align:center !important; }
+    .cta-tags, .tag-wrap { justify-content:center !important; }
+  }
+  @media(max-width:480px){
+    .problem-grid  { grid-template-columns:1fr !important; }
+    .service-items { grid-template-columns:1fr !important; }
+    .app-screens   { grid-template-columns:1fr !important; }
+    .flow-steps    { grid-template-columns:repeat(2,1fr) !important; }
+  }
+
   :focus-visible {
-    outline: 3px solid #c46b4a;
-    outline-offset: 3px;
-    border-radius: 4px;
+    outline:3px solid #FFD419;
+    outline-offset:3px;
+    border-radius:4px;
   }
 
-  /* #works カルーセル */
-  .works-scroll { overflow: hidden; }
-  .works-track { display: flex; gap: 1.25rem; will-change: transform; }
+  /* ===== Header icon buttons ===== */
+  .header-icon-btn {
+    width:38px; height:38px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0; transition:transform .15s ease, opacity .15s ease;
+  }
+  .header-icon-btn:hover { transform:translateY(-2px); opacity:0.9; }
+  .header-icon-btn svg { width:19px; height:19px; display:block; }
+
+  /* ===== Hamburger button ===== */
+  .hb-btn {
+    width:40px; height:40px; border-radius:50%;
+    background:#fff; border:1px solid rgba(0,0,0,0.1);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:4px; flex-shrink:0; cursor:pointer;
+  }
+  .hb-btn:hover { background:#f5f4ef; }
+  .hb-line { display:block; width:18px; height:2px; background:#1a1a1a; border-radius:2px; transition:transform .3s ease, opacity .2s ease; transform-origin:center; }
+  .hb-btn[aria-expanded="true"] .hb-line:nth-child(1) { transform:translateY(6px) rotate(45deg); }
+  .hb-btn[aria-expanded="true"] .hb-line:nth-child(2) { opacity:0; }
+  .hb-btn[aria-expanded="true"] .hb-line:nth-child(3) { transform:translateY(-6px) rotate(-45deg); }
+
+  /* ===== Mobile drawer menu ===== */
+  #mobile-backdrop {
+    position:fixed; inset:0; z-index:150; background:rgba(26,26,26,0.5);
+    opacity:0; pointer-events:none; transition:opacity .3s ease;
+  }
+  #mobile-backdrop.is-open { opacity:1; pointer-events:auto; }
+  #mobile-menu {
+    position:fixed; top:0; right:0; z-index:151; height:100%;
+    width:82%; max-width:340px;
+    background:#fbf6ee; box-shadow:-12px 0 40px rgba(0,0,0,0.18);
+    display:flex; flex-direction:column;
+    transform:translateX(100%); transition:transform .32s cubic-bezier(0.4,0,0.2,1);
+  }
+  #mobile-menu.is-open { transform:translateX(0); }
+  body.menu-open { overflow:hidden; }
+  .mm-link { text-decoration:none; }
+  .mm-link:hover { background:#fff; }
 </style>
 </head>
-<body class="font-sans bg-cream text-ink">
+<body>
 
-<!-- Skip to main content (keyboard / screen-reader navigation) -->
-<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-paper focus:text-ink focus:px-4 focus:py-2 focus:rounded-full focus:shadow-card focus:font-bold focus:border focus:border-line">
-  メインコンテンツへスキップ
-</a>
+<!-- PAGE WRAPPER -->
+<div style="background-image:url('assets/no46_background_paper_texture.png'); background-size:600px; background-repeat:repeat; min-height:100vh;">
 
-<!-- ================================================== -->
-<!-- TOP NAV (light, simple) -->
-<!-- ================================================== -->
-<header class="sticky top-0 z-40 bg-cream/85 backdrop-blur border-b border-line">
-  <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-    <div class="flex items-center gap-3 min-w-0">
-      <img src="assets/hitooshi_logo.png" alt="HIto-Oshiロゴ" class="w-10 h-10 rounded-full bg-paper border border-line object-cover shrink-0" />
-      <div class="min-w-0 leading-tight">
-        <div class="font-maru font-black text-lg tracking-wide">HIto-Oshi <span class="text-inkSoft font-bold text-sm">（ヒトオシ）</span></div>
-        <div class="hidden sm:block font-mono text-[10px] tracking-[0.18em] text-inkMute">宮城県北エリア・少人数のお店や会社専門</div>
+  <!-- ========== HEADER ========== -->
+  <header style="position:sticky; top:0; z-index:100; background-image:url('assets/no46_background_paper_texture.png'); background-size:600px; background-repeat:repeat; border-bottom:1px solid rgba(0,0,0,0.08); padding:0 40px;">
+    <div style="max-width:1120px; margin:0 auto; height:68px; display:flex; align-items:center; justify-content:space-between;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="assets/no01_logo_header_hito_oshi.png" style="height:36px; width:auto;" alt="HIto-Oshi">
+      </div>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <div class="header-tags" style="display:flex; gap:8px; align-items:center;">
+          <span style="background:#1a1a1a; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; white-space:nowrap;">宮城県北エリア中心</span>
+          <span style="background:#1a1a1a; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; white-space:nowrap;">個人店・小規模事業者向け</span>
+        </div>
+
+        <div style="display:flex; align-items:center; gap:8px;">
+          <!-- LINE icon -->
+          <a href="https://lin.ee/x9PBREa" target="_blank" rel="noopener noreferrer" class="header-icon-btn" style="background:#00B900;" aria-label="LINEで相談する">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3C6.48 3 2 6.58 2 11c0 3.6 2.98 6.65 7.06 7.66-.28.98-.9 3.3-1.03 3.8-.16.63.23.62.48.45.2-.13 3.2-2.17 4.5-3.05.32.03.65.04.99.04 5.52 0 10-3.58 10-8 0-4.42-4.48-8-10-8Z" fill="#fff"/></svg>
+          </a>
+          <!-- Instagram icon -->
+          <a href="https://www.instagram.com/hito.oshi2026" target="_blank" rel="noopener noreferrer" class="header-icon-btn" style="background:linear-gradient(135deg,#833ab4 0%,#fd1d1d 55%,#fcb045 100%);" aria-label="Instagramで相談する">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="#fff"/></svg>
+          </a>
+          <!-- Hamburger button -->
+          <button
+            type="button"
+            id="hb-toggle"
+            class="hb-btn"
+            aria-label="メニューを開く"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="hb-line"></span>
+            <span class="hb-line"></span>
+            <span class="hb-line"></span>
+          </button>
+        </div>
       </div>
     </div>
-    <nav class="hidden md:flex items-center gap-6 text-sm text-inkSoft">
-      <a href="#pain" class="hover:text-terra">お悩み</a>
-      <a href="#reasons" class="hover:text-terra">選ばれる理由</a>
-      <a href="#works" class="hover:text-terra">サンプル</a>
-      <a href="#price" class="hover:text-terra">料金</a>
-      <a href="#faq" class="hover:text-terra">よくある質問</a>
+  </header>
+
+  <!-- ========== MOBILE DRAWER MENU ========== -->
+  <div id="mobile-backdrop" aria-hidden="true"></div>
+  <aside id="mobile-menu" role="dialog" aria-modal="true" aria-label="ナビゲーションメニュー" aria-hidden="true">
+    <div style="height:68px; padding:0 24px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(0,0,0,0.08); flex-shrink:0;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="assets/no01_logo_header_hito_oshi.png" style="height:32px; width:auto;" alt="HIto-Oshi">
+      </div>
+      <button type="button" id="hb-close" aria-label="メニューを閉じる" style="width:38px; height:38px; border-radius:50%; border:none; background:transparent; color:#555; font-size:22px; display:flex; align-items:center; justify-content:center; cursor:pointer;">×</button>
+    </div>
+
+    <nav style="flex:1; overflow-y:auto; padding:20px 24px;">
+      <div style="font-size:11px; font-weight:700; letter-spacing:3px; color:#c46b4a; margin-bottom:10px;">MENU</div>
+      <ul style="list-style:none; margin:0; padding:0;">
+        <li><a href="#pain" class="mm-link" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:15px 10px; margin:0 -10px; border-radius:14px; color:#1a1a1a; font-weight:700; font-size:15px;">
+          <span style="display:flex; align-items:center; gap:10px;"><span style="font-size:11px; color:#999; width:20px;">01</span>お悩み</span>
+          <span style="color:#bbb;">→</span>
+        </a></li>
+        <li><a href="#service" class="mm-link" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:15px 10px; margin:0 -10px; border-radius:14px; color:#1a1a1a; font-weight:700; font-size:15px;">
+          <span style="display:flex; align-items:center; gap:10px;"><span style="font-size:11px; color:#999; width:20px;">02</span>サービス内容</span>
+          <span style="color:#bbb;">→</span>
+        </a></li>
+        <li><a href="#update" class="mm-link" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:15px 10px; margin:0 -10px; border-radius:14px; color:#1a1a1a; font-weight:700; font-size:15px;">
+          <span style="display:flex; align-items:center; gap:10px;"><span style="font-size:11px; color:#999; width:20px;">03</span>更新のしくみ</span>
+          <span style="color:#bbb;">→</span>
+        </a></li>
+        <li><a href="#works" class="mm-link" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:15px 10px; margin:0 -10px; border-radius:14px; color:#1a1a1a; font-weight:700; font-size:15px;">
+          <span style="display:flex; align-items:center; gap:10px;"><span style="font-size:11px; color:#999; width:20px;">04</span>制作実績・サンプル</span>
+          <span style="color:#bbb;">→</span>
+        </a></li>
+        <li><a href="#price" class="mm-link" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:15px 10px; margin:0 -10px; border-radius:14px; color:#1a1a1a; font-weight:700; font-size:15px;">
+          <span style="display:flex; align-items:center; gap:10px;"><span style="font-size:11px; color:#999; width:20px;">05</span>料金プラン</span>
+          <span style="color:#bbb;">→</span>
+        </a></li>
+        <li><a href="#process" class="mm-link" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:15px 10px; margin:0 -10px; border-radius:14px; color:#1a1a1a; font-weight:700; font-size:15px;">
+          <span style="display:flex; align-items:center; gap:10px;"><span style="font-size:11px; color:#999; width:20px;">06</span>ご依頼の流れ</span>
+          <span style="color:#bbb;">→</span>
+        </a></li>
+        <li><a href="#about" class="mm-link" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:15px 10px; margin:0 -10px; border-radius:14px; color:#1a1a1a; font-weight:700; font-size:15px;">
+          <span style="display:flex; align-items:center; gap:10px;"><span style="font-size:11px; color:#999; width:20px;">07</span>作っている人のこと</span>
+          <span style="color:#bbb;">→</span>
+        </a></li>
+        <li><a href="#faq" class="mm-link" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:15px 10px; margin:0 -10px; border-radius:14px; color:#1a1a1a; font-weight:700; font-size:15px;">
+          <span style="display:flex; align-items:center; gap:10px;"><span style="font-size:11px; color:#999; width:20px;">08</span>よくあるご質問</span>
+          <span style="color:#bbb;">→</span>
+        </a></li>
+      </ul>
     </nav>
-    <div class="flex items-center gap-2">
-      <a href="https://lin.ee/x9PBREa" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-forest text-white text-sm font-bold px-4 py-2 rounded-full hover:bg-forestDeep transition">
-        <i class="fa-brands fa-line"></i>
-        <span class="hidden sm:inline">LINEで無料相談</span>
-        <span class="sm:hidden">相談する</span>
+
+    <div style="padding:20px 24px; border-top:1px solid rgba(0,0,0,0.08); flex-shrink:0; display:flex; flex-direction:column; gap:10px;">
+      <a href="https://lin.ee/x9PBREa" target="_blank" rel="noopener noreferrer" class="mm-link" style="display:flex; align-items:center; justify-content:center; gap:8px; background:#00B900; color:#fff; font-weight:700; font-size:14px; padding:13px; border-radius:50px;">
+        LINEで相談する →
       </a>
-      <!-- Screen-reader live region for menu state -->
-      <span id="menu-status" class="sr-only" aria-live="polite" aria-atomic="true"></span>
-      <!-- Hamburger button (mobile only) -->
-      <button
-        type="button"
-        id="hb-toggle"
-        class="hb-btn md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 rounded-full border border-line bg-paper hover:bg-cream2 transition"
-        aria-label="メニューを開く"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <span class="hb-line block w-5 h-0.5 bg-ink rounded-full"></span>
-        <span class="hb-line block w-5 h-0.5 bg-ink rounded-full"></span>
-        <span class="hb-line block w-5 h-0.5 bg-ink rounded-full"></span>
-      </button>
+      <a href="https://www.instagram.com/hito.oshi2026" target="_blank" rel="noopener noreferrer" class="mm-link" style="display:flex; align-items:center; justify-content:center; gap:8px; background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); color:#fff; font-weight:700; font-size:14px; padding:13px; border-radius:50px;">
+        Instagramで相談する →
+      </a>
     </div>
-  </div>
-</header>
+  </aside>
 
-<!-- ================================================== -->
-<!-- MOBILE DRAWER MENU (md:hidden) -->
-<!-- ================================================== -->
-<div id="mobile-backdrop" class="md:hidden fixed inset-0 z-40 bg-ink/50 backdrop-blur-sm" aria-hidden="true"></div>
-<aside
-  id="mobile-menu"
-  class="md:hidden fixed top-0 right-0 z-50 h-full w-[82%] max-w-sm bg-cream shadow-2xl flex flex-col"
-  role="dialog"
-  aria-modal="true"
-  aria-label="ナビゲーションメニュー"
-  aria-hidden="true"
->
-  <div class="h-16 px-6 flex items-center justify-between border-b border-line shrink-0">
-    <div class="flex items-center gap-3">
-      <img src="assets/hitooshi_logo.png" alt="HIto-Oshiロゴ" class="w-10 h-10 rounded-full bg-paper border border-line object-cover" />
-      <span class="font-maru font-black text-base tracking-wide">HIto-Oshi</span>
-    </div>
-    <button
-      type="button"
-      id="hb-close"
-      class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-cream2 text-inkSoft transition"
-      aria-label="メニューを閉じる"
-    >
-      <i class="fa-solid fa-xmark text-xl"></i>
-    </button>
-  </div>
+  <!-- ========== 1. HERO ========== -->
+  <section class="hero-section" style="position:relative; min-height:680px; overflow:hidden; max-width:1400px; margin:0 auto;">
+    <img src="assets/no11_hero_shop_line_background.png" style="position:absolute; bottom:0; left:0; width:100%; height:auto; opacity:1; z-index:1; pointer-events:none;" alt="">
+    <div class="hero-side-text" style="position:absolute; left:14px; top:50%; transform:translateY(-50%) rotate(180deg); writing-mode:vertical-rl; font-size:22px; letter-spacing:3px; color:#bbb; font-weight:500; z-index:5; animation:fadeIn 1s ease 0.3s both;">LOCAL SMALL SHOPS</div>
+    <div class="hero-side-text" style="position:absolute; right:14px; top:50%; transform:translateY(-50%); writing-mode:vertical-rl; font-size:22px; letter-spacing:3px; color:#bbb; font-weight:500; z-index:5; animation:fadeIn 1s ease 0.3s both;">WEB &amp; UPDATE</div>
 
-  <nav class="flex-1 overflow-y-auto px-6 py-6">
-    <div class="font-mono text-[10px] tracking-[0.3em] text-terraDeep mb-4">MENU</div>
-    <ul class="space-y-1">
-      <li><a href="#pain"    class="mm-link group flex items-center justify-between gap-3 py-4 px-3 -mx-3 rounded-2xl hover:bg-paper transition">
-        <span class="flex items-center gap-3">
-          <span class="font-mono text-[10px] text-inkMute w-6">01</span>
-          <span class="font-maru font-bold text-base text-ink">お悩み</span>
-        </span>
-        <i class="fa-solid fa-arrow-right text-inkMute group-hover:text-terra transition"></i>
-      </a></li>
-      <li><a href="#reasons" class="mm-link group flex items-center justify-between gap-3 py-4 px-3 -mx-3 rounded-2xl hover:bg-paper transition">
-        <span class="flex items-center gap-3">
-          <span class="font-mono text-[10px] text-inkMute w-6">02</span>
-          <span class="font-maru font-bold text-base text-ink">選ばれる理由</span>
-        </span>
-        <i class="fa-solid fa-arrow-right text-inkMute group-hover:text-terra transition"></i>
-      </a></li>
-      <li><a href="#works"   class="mm-link group flex items-center justify-between gap-3 py-4 px-3 -mx-3 rounded-2xl hover:bg-paper transition">
-        <span class="flex items-center gap-3">
-          <span class="font-mono text-[10px] text-inkMute w-6">03</span>
-          <span class="font-maru font-bold text-base text-ink">サンプルサイト</span>
-        </span>
-        <i class="fa-solid fa-arrow-right text-inkMute group-hover:text-terra transition"></i>
-      </a></li>
-      <li><a href="#update"  class="mm-link group flex items-center justify-between gap-3 py-4 px-3 -mx-3 rounded-2xl hover:bg-paper transition">
-        <span class="flex items-center gap-3">
-          <span class="font-mono text-[10px] text-inkMute w-6">04</span>
-          <span class="font-maru font-bold text-base text-ink">更新のしくみ</span>
-        </span>
-        <i class="fa-solid fa-arrow-right text-inkMute group-hover:text-terra transition"></i>
-      </a></li>
-      <li><a href="#price"   class="mm-link group flex items-center justify-between gap-3 py-4 px-3 -mx-3 rounded-2xl hover:bg-paper transition">
-        <span class="flex items-center gap-3">
-          <span class="font-mono text-[10px] text-inkMute w-6">05</span>
-          <span class="font-maru font-bold text-base text-ink">料金プラン</span>
-        </span>
-        <i class="fa-solid fa-arrow-right text-inkMute group-hover:text-terra transition"></i>
-      </a></li>
-      <li><a href="#process" class="mm-link group flex items-center justify-between gap-3 py-4 px-3 -mx-3 rounded-2xl hover:bg-paper transition">
-        <span class="flex items-center gap-3">
-          <span class="font-mono text-[10px] text-inkMute w-6">06</span>
-          <span class="font-maru font-bold text-base text-ink">ご相談の流れ</span>
-        </span>
-        <i class="fa-solid fa-arrow-right text-inkMute group-hover:text-terra transition"></i>
-      </a></li>
-      <li><a href="#about"   class="mm-link group flex items-center justify-between gap-3 py-4 px-3 -mx-3 rounded-2xl hover:bg-paper transition">
-        <span class="flex items-center gap-3">
-          <span class="font-mono text-[10px] text-inkMute w-6">07</span>
-          <span class="font-maru font-bold text-base text-ink">作る人のこと</span>
-        </span>
-        <i class="fa-solid fa-arrow-right text-inkMute group-hover:text-terra transition"></i>
-      </a></li>
-      <li><a href="#faq"     class="mm-link group flex items-center justify-between gap-3 py-4 px-3 -mx-3 rounded-2xl hover:bg-paper transition">
-        <span class="flex items-center gap-3">
-          <span class="font-mono text-[10px] text-inkMute w-6">08</span>
-          <span class="font-maru font-bold text-base text-ink">よくあるご質問</span>
-        </span>
-        <i class="fa-solid fa-arrow-right text-inkMute group-hover:text-terra transition"></i>
-      </a></li>
-    </ul>
-  </nav>
+    <div class="hero-inner" style="max-width:1120px; margin:0 auto; position:relative; height:680px;">
+      <img src="assets/no03_hero_shop_owner_female.png" class="hero-chars" style="position:absolute; bottom:0; left:-10px; width:215px; height:auto; z-index:2; animation:fadeIn 1s ease 0.45s both;" alt="">
+      <img src="assets/no04_hero_shop_owner_male.png" class="hero-chars" style="position:absolute; bottom:0; left:175px; width:200px; height:auto; z-index:2; animation:fadeIn 1s ease 0.6s both;" alt="">
 
-  <div class="p-6 border-t border-line shrink-0 bg-cream2/50">
-    <a href="https://lin.ee/x9PBREa" target="_blank" rel="noopener noreferrer" class="mm-link inline-flex w-full items-center justify-center gap-2 bg-forest text-white font-bold px-5 py-4 rounded-full shadow-cta hover:bg-forestDeep transition">
-      <i class="fa-brands fa-line text-xl"></i>
-      <span>LINEで無料相談</span>
-    </a>
-    <p class="text-center text-xs text-inkMute mt-3 font-mono tracking-wider">FREE CONSULTATION</p>
-  </div>
-</aside>
-
-<main id="main-content">
-
-<!-- ================================================== -->
-<!-- 1. HERO -->
-<!-- ================================================== -->
-<section class="relative overflow-hidden">
-  <!-- soft decorative blobs -->
-  <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-terraSoft/60 blur-3xl pointer-events-none"></div>
-  <div class="absolute top-40 -left-32 w-80 h-80 rounded-full bg-forestSoft/70 blur-3xl pointer-events-none"></div>
-
-  <div class="relative max-w-5xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-10 items-center">
-    <!-- left: copy -->
-    <div>
-      <div class="inline-flex items-center gap-2 bg-paper border border-line rounded-full px-4 py-1.5 text-xs font-mono text-inkSoft tracking-widest mb-6 shadow-soft">
-        <span class="w-2 h-2 rounded-full bg-terra"></span>
-        MIYAGI · OOSAKI / TOME / KURIHARA / ISHINOMAKI
-      </div>
-      <h1 class="font-maru font-black text-[32px] md:text-[44px] leading-[1.4] tracking-tight">
-        <span class="marker-terra">人柄まで伝わるホームページ制作</span>を。<br />
-        おしゃべりでも、<br class="sm:hidden" />SNSのメッセージだけでも大丈夫。
-      </h1>
-      <div class="mt-5 flex flex-wrap items-baseline gap-x-2 gap-y-1">
-        <span class="font-mono text-[10px] tracking-[0.25em] text-inkMute">BRAND</span>
-        <span class="font-maru font-bold text-sm text-inkSoft">宮城県北のお店・ホームページ制作</span>
-        <span class="font-maru font-black text-lg md:text-xl text-terraDeep tracking-wide">HIto-Oshi<span class="text-inkSoft font-bold text-sm md:text-base">（ヒトオシ）</span></span>
-      </div>
-      <p class="mt-6 text-base md:text-lg leading-relaxed text-inkSoft">
-        文章を考えるのが苦手でも、大丈夫。<br />
-        おしゃべりや<strong class="text-ink">SNSでのメッセージ</strong>を元に、<br class="hidden md:inline" />
-        魅力的なホームページをカタチにします。<br />
-        <span class="text-terraDeep font-bold">制作中の修正は、納得いくまで何度でも無料。</span><br />
-        大崎・登米・栗原・石巻など、<br class="md:hidden" />地域に寄り添い丁寧に伴走します。
-      </p>
-
-      <div class="mt-8">
-        <a href="https://lin.ee/x9PBREa" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-forest hover:bg-forestDeep text-white font-bold px-6 py-4 rounded-full shadow-cta transition w-full sm:w-auto">
-          <i class="fa-brands fa-line text-xl"></i>
-          <span>LINEで気軽に相談してみる</span>
-        </a>
-      </div>
-
-      <div class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-inkMute">
-        <span><i class="fa-solid fa-circle-check text-forest mr-1"></i> ご相談・お見積もり無料</span>
-        <span><i class="fa-solid fa-circle-check text-forest mr-1"></i> 制作中の修正は何度でも無料</span>
-        <span><i class="fa-solid fa-circle-check text-forest mr-1"></i> SNSのメッセージだけでも制作OK</span>
-      </div>
-    </div>
-
-    <!-- right: illustration placeholder -->
-    <div class="relative">
-      <div class="relative aspect-[4/5] w-full max-w-md mx-auto">
-        <!-- background card -->
-        <div class="absolute inset-0 bg-paper border border-line rounded-[32px] shadow-card hero-illu-stripe overflow-hidden">
-          <img
-            src="assets/01_sunset_landscape.png"
-            alt="宮城県北の街並みと夕日、机の上のマグカップとノート"
-            class="w-full h-full object-cover"
-            loading="eager"
-          />
+      <div class="hero-text" style="position:absolute; top:72px; left:300px; width:500px; z-index:4; animation:fadeInUp 0.8s ease 0.15s both;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+          <span style="font-size:15px; font-weight:900; color:#1a1a1a; letter-spacing:0.5px; background:#fff; border:1.5px solid #1a1a1a; border-radius:20px; padding:4px 16px;">HIto-Oshi<span style="font-weight:700; color:#888; margin-left:4px;">（ヒトオシ）</span></span>
         </div>
-        <!-- floating chip 1 -->
-        <div class="absolute -left-4 top-10 bg-paper rounded-2xl px-4 py-3 shadow-card border border-line flex items-center gap-3">
-          <span class="w-9 h-9 rounded-full bg-forestSoft text-forest flex items-center justify-center"><i class="fa-brands fa-line"></i></span>
-          <div>
-            <div class="text-[11px] font-mono text-inkMute tracking-widest">CHAT OK</div>
-            <div class="text-sm font-bold">SNSでもOK</div>
-          </div>
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+          <svg width="18" height="18" viewBox="-9 -9 18 18"><line x1="-7" y1="0" x2="7" y2="0" stroke="#FFD419" stroke-width="2.5" stroke-linecap="round"></line><line x1="0" y1="-7" x2="0" y2="7" stroke="#FFD419" stroke-width="2.5" stroke-linecap="round"></line><line x1="-5" y1="-5" x2="5" y2="5" stroke="#FFD419" stroke-width="1.8" stroke-linecap="round"></line><line x1="5" y1="-5" x2="-5" y2="5" stroke="#FFD419" stroke-width="1.8" stroke-linecap="round"></line></svg>
+          <span style="font-size:13px; font-weight:700; color:#888; letter-spacing:1px;">ホームページ制作サービス</span>
+          <svg width="18" height="18" viewBox="-9 -9 18 18"><line x1="-7" y1="0" x2="7" y2="0" stroke="#FFD419" stroke-width="2.5" stroke-linecap="round"></line><line x1="0" y1="-7" x2="0" y2="7" stroke="#FFD419" stroke-width="2.5" stroke-linecap="round"></line><line x1="-5" y1="-5" x2="5" y2="5" stroke="#FFD419" stroke-width="1.8" stroke-linecap="round"></line><line x1="5" y1="-5" x2="-5" y2="5" stroke="#FFD419" stroke-width="1.8" stroke-linecap="round"></line></svg>
         </div>
-        <!-- floating chip 2 -->
-        <div class="absolute -right-4 bottom-12 bg-paper rounded-2xl px-4 py-3 shadow-card border border-line flex items-center gap-3">
-          <span class="w-9 h-9 rounded-full bg-terraSoft text-terraDeep flex items-center justify-center"><i class="fa-solid fa-location-dot"></i></span>
-          <div>
-            <div class="text-[11px] font-mono text-inkMute tracking-widest">LOCAL</div>
-            <div class="text-sm font-bold">宮城県北エリア</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ================================================== -->
-<!-- 1b. UPDATE APP INTRO -->
-<!-- ================================================== -->
-<section class="py-14 border-b border-line bg-cream">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="max-w-2xl mx-auto text-center mb-8">
-      <div class="font-mono text-xs tracking-[0.3em] text-forestDeep mb-3">UPDATE APP</div>
-      <h2 class="font-maru font-black text-2xl md:text-3xl leading-snug">
-        作ったあとも、<span class="marker-forest">自分で更新できる</span>ホームページ
-      </h2>
-      <p class="mt-4 text-sm md:text-base text-inkSoft leading-relaxed">
-        HIto-Oshiでは、ホームページを作って終わりではなく、お知らせ・メニュー・出店予定などをスマホからかんたんに更新できる仕組みもご用意しています。日々の情報発信を続けやすく、お店の"今"をきちんと届けられるホームページにできます。
-      </p>
-    </div>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
-      <div class="bg-paper rounded-2xl border border-line p-4 text-center shadow-soft">
-        <i class="fa-solid fa-bullhorn text-forest text-xl mb-2 block"></i>
-        <div class="text-sm font-bold text-ink">お知らせの更新</div>
-      </div>
-      <div class="bg-paper rounded-2xl border border-line p-4 text-center shadow-soft">
-        <i class="fa-solid fa-utensils text-terra text-xl mb-2 block"></i>
-        <div class="text-sm font-bold text-ink">メニューや料金の変更</div>
-      </div>
-      <div class="bg-paper rounded-2xl border border-line p-4 text-center shadow-soft">
-        <i class="fa-solid fa-calendar-days text-forestDeep text-xl mb-2 block"></i>
-        <div class="text-sm font-bold text-ink">出店予定・営業日の更新</div>
-      </div>
-      <div class="bg-paper rounded-2xl border border-line p-4 text-center shadow-soft">
-        <i class="fa-solid fa-mobile-screen text-terraDeep text-xl mb-2 block"></i>
-        <div class="text-sm font-bold text-ink">スマホから操作OK</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================== -->
-<!-- 2. PAIN POINTS -->
-<!-- ================================================== -->
-<section id="pain" class="bg-cream2/70 border-y border-line py-20">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <div class="font-mono text-xs tracking-[0.3em] text-terraDeep mb-3">PAIN POINTS</div>
-      <h2 class="font-maru font-black text-3xl md:text-4xl leading-snug">
-        こんな<span class="marker-terra">お悩み</span>、ありませんか？
-      </h2>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-5">
-      <!-- card 1 -->
-      <div class="bg-paper rounded-3xl border border-line p-7 shadow-soft">
-        <div class="w-14 h-14 rounded-2xl bg-terraSoft text-terraDeep flex items-center justify-center mb-5">
-          <i class="fa-solid fa-yen-sign text-2xl"></i>
-        </div>
-        <h3 class="font-maru font-bold text-lg mb-2 leading-snug">
-          見積もりが高すぎて<br />諦めてしまった…
-        </h3>
-        <p class="text-sm leading-relaxed text-inkSoft">
-          ホームページを作りたいのに、相見積もりを取ったら30万・50万…。「うちには無理かも」と一歩踏み出せずにいる。
-        </p>
-      </div>
-      <!-- card 2 -->
-      <div class="bg-paper rounded-3xl border border-line p-7 shadow-soft">
-        <div class="w-14 h-14 rounded-2xl bg-forestSoft text-forestDeep flex items-center justify-center mb-5">
-          <i class="fa-solid fa-face-tired text-2xl"></i>
-        </div>
-        <h3 class="font-maru font-bold text-lg mb-2 leading-snug">
-          自分で作ろうとしたけれど、<br />途中で挫折した…
-        </h3>
-        <p class="text-sm leading-relaxed text-inkSoft">
-          無料ツールを試したけど、専門用語ばかり。「ドメイン」「サーバー」「CMS」…結局よくわからないまま時間だけが過ぎた。
-        </p>
-      </div>
-      <!-- card 3 -->
-      <div class="bg-paper rounded-3xl border border-line p-7 shadow-soft">
-        <div class="w-14 h-14 rounded-2xl bg-butter text-terraDeep flex items-center justify-center mb-5">
-          <i class="fa-regular fa-clock text-2xl"></i>
-        </div>
-        <h3 class="font-maru font-bold text-lg mb-2 leading-snug">
-          文章や写真を準備する<br />時間がない！
-        </h3>
-        <p class="text-sm leading-relaxed text-inkSoft">
-          毎日のお店の仕事で手いっぱい。「お店の魅力を文章にして」と言われても、何から書けばいいのか分からない。
-        </p>
-      </div>
-    </div>
-
-    <div class="mt-10 text-center">
-      <p class="font-maru text-lg md:text-xl font-bold text-ink">
-        ひとつでも当てはまったら、<br class="md:hidden" />
-        <span class="marker-forest">どうぞ気軽にご相談ください。</span>
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================== -->
-<!-- 3. REASONS WE ARE CHOSEN -->
-<!-- ================================================== -->
-<section id="reasons" class="py-24">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-16">
-      <div class="font-mono text-xs tracking-[0.3em] text-terraDeep mb-3">OUR STRENGTHS</div>
-      <h2 class="font-maru font-black text-3xl md:text-4xl leading-snug">HIto-Oshi（ヒトオシ）が選ばれる、3つの理由</h2>
-    </div>
-
-    <!-- reason 1 — image left, text right -->
-    <div class="grid md:grid-cols-2 gap-10 items-center mb-20">
-      <div class="order-2 md:order-1">
-        <div class="aspect-[5/4] rounded-3xl bg-forestSoft border border-line shadow-card overflow-hidden">
-          <img src="assets/02_cafe_women.png" alt="カフェで笑顔の店主とヒアリング中の様子" class="w-full h-full object-cover" loading="lazy" />
-        </div>
-      </div>
-      <div class="order-1 md:order-2">
-        <div class="inline-flex items-center gap-2 bg-forestSoft text-forestDeep px-3 py-1 rounded-full text-xs font-mono tracking-widest mb-4">
-          <span class="w-1.5 h-1.5 rounded-full bg-forest"></span>REASON 01
-        </div>
-        <h3 class="font-maru font-black text-2xl md:text-3xl leading-snug mb-4">
-          想いを伝えるだけで、<br />
-          <span class="marker-forest">魅力的な文章をこちらで提案</span>します
-        </h3>
-        <p class="text-inkSoft leading-relaxed">
-          おしゃべりでのインタビューだけでなく、<br />
-          <strong class="text-ink">SNSでのメッセージでいくつかの質問に答えていくだけ</strong>でも、<br />
-          AIを使いながら、お客様の想いを形に仕上げます。<br />
-          「うちの良さなんて言葉にできない…」という方こそ、ぜひ。
-        </p>
-        <ul class="mt-5 space-y-2 text-sm text-ink">
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>SNSでのメッセージだけでも完結できます</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>取材は1〜2時間、リラックスして話すだけ</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>仕上げは人の手で温度感を整えます</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- reason 2 — text left, image right -->
-    <div class="grid md:grid-cols-2 gap-10 items-center mb-20">
-      <div>
-        <div class="inline-flex items-center gap-2 bg-terraSoft text-terraDeep px-3 py-1 rounded-full text-xs font-mono tracking-widest mb-4">
-          <span class="w-1.5 h-1.5 rounded-full bg-terra"></span>REASON 02
-        </div>
-        <h3 class="font-maru font-black text-2xl md:text-3xl leading-snug mb-4">
-          納品まで何度でも<span class="marker-terra">修正無料</span>、<br />
-          無駄なコストをカット
-        </h3>
-        <p class="text-inkSoft leading-relaxed">
-          制作費は<strong class="text-terraDeep">5万円から</strong>。<br />
-          最新のツールを活用して制作工程を効率化し、<br />
-          スピードと価格を両立しました。<br />
-          <strong class="text-terraDeep">納品前はお客さまが納得いくまで何度でも修正無料</strong>だから、安心してお任せください。
-        </p>
-        <div class="mt-6 grid grid-cols-2 gap-3">
-          <div class="bg-paper border border-line rounded-2xl p-4 text-center">
-            <div class="font-mono text-[11px] tracking-widest text-inkMute mb-1">FROM</div>
-            <div class="font-maru font-black text-2xl text-terraDeep">¥50,000<span class="text-base text-inkSoft">〜</span></div>
-          </div>
-          <div class="bg-paper border border-line rounded-2xl p-4 text-center">
-            <div class="font-mono text-[11px] tracking-widest text-inkMute mb-1">REVISION</div>
-            <div class="font-maru font-black text-2xl text-terraDeep">何度でも無料</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="aspect-[5/4] rounded-3xl bg-terraSoft border border-line shadow-card overflow-hidden">
-          <img src="assets/03_laptop_desk.png" alt="ノートパソコンとデザイン資料、AIによる制作のイメージ" class="w-full h-full object-cover" loading="lazy" />
-        </div>
-      </div>
-    </div>
-
-    <!-- reason 3 — image left, text right -->
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div class="order-2 md:order-1">
-        <div class="aspect-[5/4] rounded-3xl bg-butter/70 border border-line shadow-card overflow-hidden">
-          <img src="assets/04_riverside_people.png" alt="川辺で笑顔で会話する地元の事業者ふたり" class="w-full h-full object-cover" loading="lazy" />
-        </div>
-      </div>
-      <div class="order-1 md:order-2">
-        <div class="inline-flex items-center gap-2 bg-butter text-terraDeep px-3 py-1 rounded-full text-xs font-mono tracking-widest mb-4">
-          <span class="w-1.5 h-1.5 rounded-full bg-terra"></span>REASON 03
-        </div>
-        <h3 class="font-maru font-black text-2xl md:text-3xl leading-snug mb-4">
-          宮城県北エリアから<br />
-          <span class="marker-terra">寄り添う、伴走サポート</span>
-        </h3>
-        <p class="text-inkSoft leading-relaxed">
-          大崎・登米・栗原・石巻など、同じ宮城県北エリアから、同じ少人数事業者の視点で伴走します。<br />
-          難しい専門用語は使いません。<br />
-          月額1,500円の安心保守サポートで、納品後のちょっとした修正やインスタの連携トラブルなどにも、親身に対応します。
-        </p>
-        <ul class="mt-5 space-y-2 text-sm text-ink">
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>SNSで気軽に質問・相談OK</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>営業電話・難しい用語は一切ありません</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>長くお付き合いできる距離感を大切に</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================== -->
-<!-- 4. WORKS / SAMPLE SITES -->
-<!-- ================================================== -->
-<section id="works" class="bg-cream2/70 border-y border-line py-20">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <div class="font-mono text-xs tracking-[0.3em] text-terraDeep mb-3">WORKS</div>
-      <h2 class="font-maru font-black text-3xl md:text-4xl leading-snug">
-        <span class="marker-terra">制作実績・サンプル</span>
-      </h2>
-      <p class="text-inkSoft mt-4 text-sm md:text-base">デザインの雰囲気や更新機能をぜひご確認ください。</p>
-    </div>
-
-    <!-- カルーセル: JS で自動スクロール＆ループ / カードを追加するだけで対応 -->
-    <div class="works-scroll">
-      <div class="works-track py-3">
-
-      <!-- ▼ SAMPLE 01 -->
-      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
-        <!-- screenshot -->
-        <a href="https://machi-no-spoon.vercel.app/" target="_blank" rel="noopener noreferrer"
-           class="block aspect-[16/10] overflow-hidden bg-cream2 shrink-0">
-          <img
-            src="assets/sample_machi_no_spoon.png"
-            alt="machi no spoon キッチンカー サンプルサイト"
-            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
-            loading="lazy"
-          />
-        </a>
-        <!-- content -->
-        <div class="p-6 flex flex-col flex-1">
-          <div class="flex items-center justify-between mb-3">
-            <span class="inline-flex items-center gap-1 bg-terraSoft text-terraDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-truck text-[10px]"></i> キッチンカー
-            </span>
-            <span class="inline-flex items-center border border-line text-inkMute text-[10px] px-2 py-0.5 rounded-full">サンプル</span>
-          </div>
-          <h3 class="font-maru font-black text-lg leading-snug mb-2">machi no spoon</h3>
-          <p class="text-sm text-inkSoft leading-relaxed flex-1">
-            まちのキッチンカーのサンプルサイトです。Instagramだけでは伝えきれない情報を整理して届けるよう設計しています。
-          </p>
-          <!-- app-updatable tags -->
-          <div class="mt-4 mb-2 flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> 出店予定
-            </span>
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> メニュー
-            </span>
-          </div>
-          <p class="text-[11px] text-inkMute flex items-center gap-1 mb-4">
-            <i class="fa-solid fa-mobile-screen-button text-forest"></i>
-            <span>上記はアプリからカンタンに更新可能</span>
-          </p>
-          <a href="https://machi-no-spoon.vercel.app/" target="_blank" rel="noopener noreferrer"
-             class="mt-auto inline-flex items-center justify-center gap-2 bg-ink hover:bg-inkSoft text-white text-sm font-bold py-3 rounded-full transition">
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> サイトを見る
-          </a>
-        </div>
-      </article>
-
-      <!-- ▼ SAMPLE 02 -->
-      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
-        <!-- screenshot -->
-        <a href="https://haru-no-oto-sample.vercel.app/" target="_blank" rel="noopener noreferrer"
-           class="block aspect-[16/10] overflow-hidden bg-cream2 shrink-0">
-          <img
-            src="assets/sample_haru_no_oto.png"
-            alt="haru no oto カフェ サンプルサイト"
-            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
-            loading="lazy"
-          />
-        </a>
-        <!-- content -->
-        <div class="p-6 flex flex-col flex-1">
-          <div class="flex items-center justify-between mb-3">
-            <span class="inline-flex items-center gap-1 bg-terraSoft text-terraDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-mug-hot text-[10px]"></i> カフェ
-            </span>
-            <span class="inline-flex items-center border border-line text-inkMute text-[10px] px-2 py-0.5 rounded-full">サンプル</span>
-          </div>
-          <h3 class="font-maru font-black text-lg leading-snug mb-2">haru no oto</h3>
-          <p class="text-sm text-inkSoft leading-relaxed flex-1">
-            街中にある春の音が聞こえるようなゆったりとした時間が味わえるカフェをイメージしたサンプルホームページです。
-          </p>
-          <!-- app-updatable tags -->
-          <div class="mt-4 mb-2 flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> NEWS
-            </span>
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> 本日の焼き菓子
-            </span>
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> メニュー
-            </span>
-          </div>
-          <p class="text-[11px] text-inkMute flex items-center gap-1 mb-4">
-            <i class="fa-solid fa-mobile-screen-button text-forest"></i>
-            <span>上記はアプリからカンタンに更新可能</span>
-          </p>
-          <a href="https://haru-no-oto-sample.vercel.app/" target="_blank" rel="noopener noreferrer"
-             class="mt-auto inline-flex items-center justify-center gap-2 bg-ink hover:bg-inkSoft text-white text-sm font-bold py-3 rounded-full transition">
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> サイトを見る
-          </a>
-        </div>
-      </article>
-
-      <!-- ▼ SAMPLE 03 -->
-      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
-        <!-- screenshot -->
-        <a href="https://rusty-pop-vintage.vercel.app/" target="_blank" rel="noopener noreferrer"
-           class="block aspect-[16/10] overflow-hidden bg-cream2 shrink-0">
-          <img
-            src="assets/sample_rusty_pop.png"
-            alt="RUSTY POP VINTAGE 古着屋 サンプルサイト"
-            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
-            loading="lazy"
-          />
-        </a>
-        <!-- content -->
-        <div class="p-6 flex flex-col flex-1">
-          <div class="flex items-center justify-between mb-3">
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-shirt text-[10px]"></i> 古着屋
-            </span>
-            <span class="inline-flex items-center border border-line text-inkMute text-[10px] px-2 py-0.5 rounded-full">サンプル</span>
-          </div>
-          <h3 class="font-maru font-black text-lg leading-snug mb-2">RUSTY POP VINTAGE</h3>
-          <p class="text-sm text-inkSoft leading-relaxed flex-1">
-            アメカジ古着屋をテーマに、アメコミのようなポップさと力強いデザインを融合。マンガのコマ割り枠線で1点ものの魅力を引き立てた制作事例です。
-          </p>
-          <!-- app-updatable tags -->
-          <div class="mt-4 mb-2 flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> 新着アイテム
-            </span>
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> セール情報
-            </span>
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> 営業カレンダー
-            </span>
-          </div>
-          <p class="text-[11px] text-inkMute flex items-center gap-1 mb-4">
-            <i class="fa-solid fa-mobile-screen-button text-forest"></i>
-            <span>上記はアプリからカンタンに更新可能</span>
-          </p>
-          <a href="https://rusty-pop-vintage.vercel.app/" target="_blank" rel="noopener noreferrer"
-             class="mt-auto inline-flex items-center justify-center gap-2 bg-ink hover:bg-inkSoft text-white text-sm font-bold py-3 rounded-full transition">
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> サイトを見る
-          </a>
-        </div>
-      </article>
-
-      <!-- ▼ SAMPLE 04 -->
-      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
-        <!-- screenshot -->
-        <a href="https://morishitakomuten.vercel.app/" target="_blank" rel="noopener noreferrer"
-           class="block aspect-[16/10] overflow-hidden bg-cream2 shrink-0">
-          <img
-            src="assets/sample_morishita.png"
-            alt="森下工務店 サンプルサイト"
-            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
-            loading="lazy"
-          />
-        </a>
-        <!-- content -->
-        <div class="p-6 flex flex-col flex-1">
-          <div class="flex items-center justify-between mb-3">
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-hammer text-[10px]"></i> 工務店
-            </span>
-            <span class="inline-flex items-center border border-line text-inkMute text-[10px] px-2 py-0.5 rounded-full">サンプル</span>
-          </div>
-          <h3 class="font-maru font-black text-lg leading-snug mb-2">森下工務店</h3>
-          <p class="text-sm text-inkSoft leading-relaxed flex-1">
-            地域密着の工務店をイメージしたサンプルサイトです。施工事例や会社の想いを丁寧に伝えられる構成で、誠実さと信頼感を大切にデザインしました。
-          </p>
-          <!-- app-updatable tags -->
-          <div class="mt-4 mb-2 flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> 施工事例
-            </span>
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> お知らせ
-            </span>
-          </div>
-          <p class="text-[11px] text-inkMute flex items-center gap-1 mb-4">
-            <i class="fa-solid fa-mobile-screen-button text-forest"></i>
-            <span>上記はアプリからカンタンに更新可能</span>
-          </p>
-          <a href="https://morishitakomuten.vercel.app/" target="_blank" rel="noopener noreferrer"
-             class="mt-auto inline-flex items-center justify-center gap-2 bg-ink hover:bg-inkSoft text-white text-sm font-bold py-3 rounded-full transition">
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> サイトを見る
-          </a>
-        </div>
-      </article>
-
-      <!-- ▼ SAMPLE 05 -->
-      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
-        <!-- screenshot -->
-        <a href="https://luna-e-sole.vercel.app/" target="_blank" rel="noopener noreferrer"
-           class="block aspect-[16/10] overflow-hidden bg-cream2 shrink-0">
-          <img
-            src="assets/sample_luna_e_sole.png"
-            alt="Luna e Sole サロン 納品事例"
-            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
-            loading="lazy"
-          />
-        </a>
-        <!-- content -->
-        <div class="p-6 flex flex-col flex-1">
-          <div class="flex items-center justify-between mb-3">
-            <span class="inline-flex items-center gap-1 bg-terraSoft text-terraDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-spa text-[10px]"></i> サロン
-            </span>
-            <span class="inline-flex items-center gap-1 bg-terraDeep text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
-              <i class="fa-solid fa-circle-check text-[9px]"></i> 納品事例
-            </span>
-          </div>
-          <h3 class="font-maru font-black text-lg leading-snug mb-2">Luna e Sole</h3>
-          <p class="text-sm text-inkSoft leading-relaxed flex-1">
-            実際に営業中のサロン様にご利用いただいているサイトです。余白や写真の見せ方を大切に、やさしい雰囲気と温かみが伝わるデザインに仕上げました。
-          </p>
-          <!-- app-updatable tags -->
-          <div class="mt-4 mb-2 flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> お知らせ
-            </span>
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> ご予約案内
-            </span>
-          </div>
-          <p class="text-[11px] text-inkMute flex items-center gap-1 mb-4">
-            <i class="fa-solid fa-mobile-screen-button text-forest"></i>
-            <span>上記はアプリからカンタンに更新可能</span>
-          </p>
-          <a href="https://luna-e-sole.vercel.app/" target="_blank" rel="noopener noreferrer"
-             class="mt-auto inline-flex items-center justify-center gap-2 bg-ink hover:bg-inkSoft text-white text-sm font-bold py-3 rounded-full transition">
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> サイトを見る
-          </a>
-        </div>
-      </article>
-
-      <!-- ▼ SAMPLE 06 -->
-      <article class="bg-paper rounded-3xl border border-line shadow-soft overflow-hidden flex flex-col group flex-none w-[300px] sm:w-[320px] snap-center">
-        <!-- screenshot -->
-        <a href="https://gohan-to-sake-akari.vercel.app/" target="_blank" rel="noopener noreferrer"
-           class="block aspect-[16/10] overflow-hidden bg-cream2 shrink-0">
-          <img
-            src="assets/sample_akari.png"
-            alt="ごはんと酒 灯り 居酒屋 サンプルサイト"
-            class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105"
-            loading="lazy"
-          />
-        </a>
-        <!-- content -->
-        <div class="p-6 flex flex-col flex-1">
-          <div class="flex items-center justify-between mb-3">
-            <span class="inline-flex items-center gap-1 bg-terraSoft text-terraDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-utensils text-[10px]"></i> 居酒屋
-            </span>
-            <span class="inline-flex items-center border border-line text-inkMute text-[10px] px-2 py-0.5 rounded-full">サンプル</span>
-          </div>
-          <h3 class="font-maru font-black text-lg leading-snug mb-2">ごはんと酒 灯り</h3>
-          <p class="text-sm text-inkSoft leading-relaxed flex-1">
-            小さな居酒屋のサンプルサイトです。日替わりのおすすめや季節のお酒など、お店の"今日"をわかりやすく届けられるよう設計しています。
-          </p>
-          <!-- app-updatable tags -->
-          <div class="mt-4 mb-2 flex flex-wrap gap-1.5">
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> おすすめ
-            </span>
-            <span class="inline-flex items-center gap-1 bg-forestSoft text-forestDeep text-[11px] font-bold px-2.5 py-1 rounded-full">
-              <i class="fa-solid fa-rotate text-[9px]"></i> お知らせ
-            </span>
-          </div>
-          <p class="text-[11px] text-inkMute flex items-center gap-1 mb-4">
-            <i class="fa-solid fa-mobile-screen-button text-forest"></i>
-            <span>上記はアプリからカンタンに更新可能</span>
-          </p>
-          <a href="https://gohan-to-sake-akari.vercel.app/" target="_blank" rel="noopener noreferrer"
-             class="mt-auto inline-flex items-center justify-center gap-2 bg-ink hover:bg-inkSoft text-white text-sm font-bold py-3 rounded-full transition">
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> サイトを見る
-          </a>
-        </div>
-      </article>
-
-      </div><!-- /works-track -->
-    </div><!-- /works-scroll -->
-  </div>
-</section>
-
-<!-- ================================================== -->
-<!-- 5. EASY UPDATE SYSTEM -->
-<!-- ================================================== -->
-<section id="update" class="bg-cream2/70 border-y border-line py-20">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <div class="font-mono text-xs tracking-[0.3em] text-terraDeep mb-3">EASY UPDATE SYSTEM</div>
-      <h2 class="font-maru font-black text-3xl md:text-4xl leading-snug">
-        納品後も<span class="marker-terra">ラクラク更新</span>のしくみ
-      </h2>
-      <p class="text-inkSoft mt-4 text-sm md:text-base">「作って終わり」じゃない。日々の更新を、もっと簡単に。</p>
-    </div>
-
-    <div class="grid grid-cols-1 gap-6 max-w-3xl mx-auto">
-      <!-- feature 1 -->
-      <div class="bg-paper rounded-3xl border border-line p-8 shadow-soft">
-        <div class="flex items-center justify-between gap-3 mb-4 flex-wrap">
-          <div class="flex items-center gap-3">
-            <span class="w-12 h-12 rounded-2xl bg-forestSoft text-forest flex items-center justify-center text-xl"><i class="fa-solid fa-mobile-screen-button"></i></span>
-            <div class="font-mono text-[11px] tracking-widest text-inkMute">FEATURE 01</div>
-          </div>
-          <!-- 保守加入バッジ -->
-          <span class="inline-flex items-center gap-1 bg-terra/10 text-terraDeep text-[11px] font-bold px-3 py-1 rounded-full border border-terra/25">
-            <i class="fa-solid fa-shield-halved text-[10px]"></i> 安心保守サポート加入者限定
+        <h1 style="font-size:clamp(34px,9vw,60px); font-weight:900; line-height:1.22; margin:0 0 20px; color:#1a1a1a; white-space:nowrap;">
+          <span style="display:block;">
+            <span style="position:relative; display:inline-block;">
+              <span style="position:absolute; bottom:0px; left:-5px; right:-5px; height:20px; background:#FFD419; border-radius:3px; transform:rotate(-1deg) skewX(-2deg); z-index:0; animation:markerDraw 0.7s ease 0.9s both; opacity:0.55;"></span>
+              <span style="position:relative; z-index:1; font-size:clamp(34px,10.5vw,70px); line-height:1;">ホームページ</span>
+            </span>で
           </span>
+          <span style="display:block;">もう一押し。</span>
+        </h1>
+
+        <div style="margin-bottom:20px; animation:markerDraw 0.6s ease 1.1s both; clip-path:inset(0 0 0 0);">
+          <svg width="320" height="14" viewBox="0 0 320 14"><path d="M4,9 Q80,2 160,9 Q240,16 316,9" stroke="#FFD419" stroke-width="3.5" fill="none" stroke-linecap="round"></path></svg>
         </div>
-        <h3 class="font-maru font-black text-xl mb-3 leading-snug">
-          専用アプリで<span class="text-forest">お知らせ・メニュー表</span>の<br />更新がカンタン！
-        </h3>
-        <p class="text-sm text-inkSoft leading-relaxed mb-5">
-          安心保守サポートにご加入のお客様には、スマホから直接ホームページを更新できる<strong class="text-ink">専用アプリ</strong>をご提供します。お知らせの追加やメニュー表の変更も、アプリを開いて入力するだけで完了します。
+
+        <p style="font-size:15px; color:#444; line-height:1.85; margin:0 0 30px;">
+          地域の小さなお店に、ちょうどいいホームページを。<br>
+          相談しやすく、更新しやすく、想いが伝わる形に整えます。
         </p>
-        <!-- mini diagram -->
-        <div class="flex items-center justify-between gap-3 bg-cream rounded-2xl border border-line p-4 mb-4">
-          <div class="flex-1 text-center">
-            <i class="fa-solid fa-mobile-screen text-2xl text-inkSoft"></i>
-            <div class="text-[11px] mt-1 font-mono tracking-wider text-inkMute">専用アプリを開く</div>
-          </div>
-          <i class="fa-solid fa-arrow-right text-terra"></i>
-          <div class="flex-1 text-center">
-            <i class="fa-solid fa-pen-to-square text-2xl text-forest"></i>
-            <div class="text-[11px] mt-1 font-mono tracking-wider text-inkMute">内容を入力</div>
-          </div>
-          <i class="fa-solid fa-arrow-right text-terra"></i>
-          <div class="flex-1 text-center">
-            <i class="fa-solid fa-laptop text-2xl text-terraDeep"></i>
-            <div class="text-[11px] mt-1 font-mono tracking-wider text-inkMute">HPに即反映</div>
-          </div>
-        </div>
-        <!-- 非加入者向け注記 -->
-        <div class="flex items-start gap-2 bg-cream2/80 border border-line rounded-xl px-4 py-3 text-xs text-inkSoft">
-          <i class="fa-solid fa-circle-info text-inkMute mt-0.5 shrink-0"></i>
-          <span>安心保守サポート未加入の場合、更新作業はスポット対応（随時お見積もり）となります。</span>
+
+        <div class="hero-cta" style="display:flex; gap:12px; flex-wrap:wrap; position:relative; top:-22px;">
+          <a href="https://lin.ee/x9PBREa" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:inline-flex; align-items:center; gap:8px; background:#00B900; color:#fff; font-weight:700; font-size:14px; padding:14px 26px; border-radius:50px; text-decoration:none;">
+            LINEで相談する →
+          </a>
+          <a href="https://www.instagram.com/hito.oshi2026" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:inline-flex; align-items:center; gap:8px; background:linear-gradient(135deg,#833ab4 0%,#fd1d1d 50%,#fcb045 100%); color:#fff; font-weight:700; font-size:14px; padding:14px 26px; border-radius:50px; text-decoration:none;">
+            Instagramで相談する →
+          </a>
         </div>
       </div>
 
-      <!-- feature 2 -->
-      <div class="bg-paper rounded-3xl border border-line p-8 shadow-soft">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="w-12 h-12 rounded-2xl bg-terraSoft text-terraDeep flex items-center justify-center text-xl"><i class="fa-brands fa-instagram"></i></span>
-          <div class="font-mono text-[11px] tracking-widest text-inkMute">FEATURE 02</div>
+      <div class="hero-combined-device" style="position:absolute; bottom:0; left:330px; width:510px; z-index:3; animation:floatUp 0.9s ease 0.75s both;">
+        <img src="assets/no0507_hero_laptop_phone.png" style="width:100%; height:auto; position:relative; top:69px;" alt="">
+      </div>
+
+      <img src="assets/no09_hero_consultant_female.png" class="hero-chars" style="position:absolute; bottom:0; right:10px; width:278px; height:auto; z-index:2; animation:fadeIn 1s ease 0.65s both; top:363px;" alt="">
+
+      <div class="hero-chars-mobile-row" style="display:none; order:2; justify-content:center; align-items:flex-end; gap:4px; margin-top:0; position:relative; z-index:2;">
+        <img src="assets/no03_hero_shop_owner_female.png" style="width:96px; height:auto;" alt="">
+        <img src="assets/no04_hero_shop_owner_male.png" style="width:90px; height:auto;" alt="">
+        <img src="assets/no09_hero_consultant_female.png" style="width:110px; height:auto;" alt="">
+      </div>
+
+      <img src="assets/no10_hero_speech_bubble.png" class="hero-chars" style="position:absolute; bottom:290px; right:60px; width:175px; height:auto; z-index:5; animation:popIn 0.5s ease 1.15s both; top:310px; left:888px;" alt="">
+    </div>
+  </section>
+
+  <!-- ========== 2. お悩みセクション ========== -->
+  <section id="pain" class="section-padding" style="background:rgba(255,255,255,0.55);">
+    <div style="max-width:1120px; margin:0 auto;">
+      <div class="section-2col" style="display:flex; gap:60px; align-items:flex-start;">
+        <div style="flex:0 0 220px;">
+          <div style="font-size:12px; font-weight:700; color:#888; letter-spacing:2px; margin-bottom:8px;">PROBLEM</div>
+          <h2 style="font-size:38px; font-weight:900; line-height:1.25; margin:0; color:#1a1a1a;">
+            こんなお悩み、<br>
+            <span style="position:relative; display:inline-block;">
+              <span style="position:absolute; bottom:2px; left:-3px; right:-3px; height:12px; background:#FFD419; opacity:0.5; border-radius:2px; z-index:0;"></span>
+              <span style="position:relative; z-index:1;">ありませんか？</span>
+            </span>
+          </h2>
         </div>
-        <h3 class="font-maru font-black text-xl mb-3 leading-snug">
-          いつものインスタ投稿が<br /><span class="text-terraDeep">HPに自動表示</span>
-        </h3>
-        <p class="text-sm text-inkSoft leading-relaxed mb-3">
-          Instagramの投稿がホームページに自動で流れるように設定します。二度手間の更新作業は必要ありません。
+        <div class="problem-grid" style="flex:1;">
+          <div style="background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:16px; padding:24px 18px; text-align:center; box-shadow:0 2px 16px rgba(0,0,0,0.05);">
+            <div style="font-size:11px; font-weight:900; color:#999; letter-spacing:1px; margin-bottom:12px;">01</div>
+            <img src="assets/no12_problem_instagram_flow.png" style="width:125px; height:80px; object-fit:cover; margin-bottom:14px;" alt="">
+            <p style="font-size:13px; font-weight:700; line-height:1.6; margin:0; color:#1a1a1a;">Instagramだけでは<br>情報が流れてしまう</p>
+          </div>
+          <div style="background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:16px; padding:24px 18px; text-align:center; box-shadow:0 2px 16px rgba(0,0,0,0.05);">
+            <div style="font-size:11px; font-weight:900; color:#999; letter-spacing:1px; margin-bottom:12px;">02</div>
+            <img src="assets/no13_problem_menu_hours_confusing.png" style="width:125px; height:80px; object-fit:cover; margin-bottom:14px;" alt="">
+            <p style="font-size:13px; font-weight:700; line-height:1.6; margin:0; color:#1a1a1a;">営業時間やメニューを<br>まとめて見せにくい</p>
+          </div>
+          <div style="background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:16px; padding:24px 18px; text-align:center; box-shadow:0 2px 16px rgba(0,0,0,0.05);">
+            <div style="font-size:11px; font-weight:900; color:#999; letter-spacing:1px; margin-bottom:12px;">03</div>
+            <img src="assets/no14_problem_update_anxiety.png" style="width:98px; height:80px; object-fit:cover; margin-bottom:14px;" alt="">
+            <p style="font-size:13px; font-weight:700; line-height:1.6; margin:0; color:#1a1a1a;">ホームページを作っても<br>更新できるか不安</p>
+          </div>
+          <div style="background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:16px; padding:24px 18px; text-align:center; box-shadow:0 2px 16px rgba(0,0,0,0.05);">
+            <div style="font-size:11px; font-weight:900; color:#999; letter-spacing:1px; margin-bottom:12px;">04</div>
+            <img src="assets/no15_problem_trust_window.png" style="width:110px; height:80px; object-fit:cover; margin-bottom:14px;" alt="">
+            <p style="font-size:13px; font-weight:700; line-height:1.6; margin:0; color:#1a1a1a;">ちゃんとして見える<br>窓口がほしい</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3. What HIto-Oshi Does ========== -->
+  <section id="service" class="section-padding">
+    <div style="max-width:1120px; margin:0 auto;">
+      <div class="section-2col" style="display:flex; gap:60px; align-items:flex-start;">
+        <div class="section-label" style="flex:0 0 160px;">
+          <p style="font-size:28px; font-weight:900; line-height:1.1; margin:0; color:#1a1a1a; letter-spacing:1px;">WHAT<br>HIto-Oshi<br>DOES</p>
+        </div>
+        <div style="flex:1;">
+          <h2 style="font-size:36px; font-weight:900; line-height:1.3; margin:0 0 12px; color:#1a1a1a;">
+            お店の
+            <span style="position:relative; display:inline-block;">
+              <span style="position:absolute; bottom:0; left:-4px; right:-4px; height:14px; background:#FFD419; opacity:0.5; border-radius:2px; z-index:0;"></span>
+              <span style="position:relative; z-index:1;">"もう一押し"</span>
+            </span>
+            を、Webから。
+          </h2>
+          <p style="font-size:15px; color:#555; line-height:1.8; margin:0 0 40px;">
+            見つけてくれた人に、あなたのお店の魅力をきちんと届けます。
+          </p>
+          <div class="service-row" style="display:flex; gap:40px; align-items:flex-start;">
+            <div class="service-items" style="flex:1;">
+              <div style="text-align:center;">
+                <div style="width:52px; height:52px; background:#FFD419; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:16px; font-weight:900; color:#1a1a1a;">01</div>
+                <img src="assets/no16_service_website_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+                <p style="font-size:13px; font-weight:700; margin:0; color:#1a1a1a; line-height:1.5;">ホームページ<br>制作</p>
+              </div>
+              <div style="text-align:center;">
+                <div style="width:52px; height:52px; background:#7EC8D4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:16px; font-weight:900; color:#fff;">02</div>
+                <img src="assets/no17_service_easy_update_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+                <p style="font-size:13px; font-weight:700; margin:0; color:#1a1a1a; line-height:1.5;">更新しやすい<br>設計</p>
+              </div>
+              <div style="text-align:center;">
+                <div style="width:52px; height:52px; background:#E07A7A; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:16px; font-weight:900; color:#fff;">03</div>
+                <img src="assets/no18_service_copywriting_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+                <p style="font-size:13px; font-weight:700; margin:0; color:#1a1a1a; line-height:1.5;">魅力が伝わる<br>文章提案</p>
+              </div>
+              <div style="text-align:center;">
+                <div style="width:52px; height:52px; background:#6aabf7; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:16px; font-weight:900; color:#fff;">04</div>
+                <img src="assets/no19_service_sns_flow_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+                <p style="font-size:13px; font-weight:700; margin:0; color:#1a1a1a; line-height:1.5;">SNS<br>導線づくり</p>
+              </div>
+            </div>
+            <div class="service-illus" style="flex:0 0 180px; text-align:center;">
+              <img src="assets/no20_service_meeting_illustration.png" style="width:202px; height:auto; object-fit:contain;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. UPDATE APP ========== -->
+  <section id="update" class="section-padding" style="background:rgba(255,255,255,0.6);">
+    <div style="max-width:1120px; margin:0 auto;">
+      <div class="section-2col" style="display:flex; gap:60px; align-items:flex-start;">
+        <div class="section-label" style="flex:0 0 160px;">
+          <p style="font-size:28px; font-weight:900; line-height:1.1; margin:0 0 20px; color:#1a1a1a; letter-spacing:1px;">UPDATE<br>APP</p>
+        </div>
+        <div style="flex:1;">
+          <h2 style="font-size:34px; font-weight:900; margin:0 0 10px; color:#1a1a1a; line-height:1.3;">
+            毎日の発信や管理を、<br>
+            <span style="position:relative; display:inline-block;">
+              <span style="position:absolute; bottom:0; left:-3px; right:-3px; height:12px; background:#FFD419; opacity:0.5; border-radius:2px; z-index:0;"></span>
+              <span style="position:relative; z-index:1;">アプリでシンプルに。</span>
+            </span>
+          </h2>
+          <p style="font-size:15px; color:#555; line-height:1.8; margin:0 0 40px;">専門知識がなくても、スマホでサクッと更新できます。</p>
+          <div class="app-row" style="display:flex; gap:32px; align-items:flex-end;">
+            <div class="app-screens" style="flex:1;">
+              <div style="text-align:center;">
+                <div style="display:inline-block; background:#1a1a1a; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px;">メニュー更新</div>
+                <img src="assets/no21_update_app_menu_screen.png" style="width:100%; max-width:140px; height:auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.15);" alt="">
+              </div>
+              <div style="text-align:center;">
+                <div style="display:inline-block; background:#1a1a1a; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px;">お知らせ更新</div>
+                <img src="assets/no22_update_app_news_screen.png" style="width:100%; max-width:140px; height:auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.15);" alt="">
+              </div>
+              <div style="text-align:center;">
+                <div style="display:inline-block; background:#1a1a1a; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px;">スケジュール登録</div>
+                <img src="assets/no23_update_app_schedule_screen.png" style="width:100%; max-width:140px; height:auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.15);" alt="">
+              </div>
+              <div style="text-align:center;">
+                <div style="display:inline-block; background:#1a1a1a; color:#fff; font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px;">カレンダー画像生成</div>
+                <img src="assets/no24_update_app_calendar_image_screen.png" style="width:100%; max-width:140px; height:auto; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.15);" alt="">
+              </div>
+            </div>
+            <div class="app-lady" style="flex:0 0 160px; position:relative; text-align:center;">
+              <img src="assets/no26_update_app_speech_bubble.png" style="width:140px; height:auto; margin-bottom:-20px; position:relative; z-index:2;" alt="">
+              <img src="assets/no25_update_app_phone_female.png" style="width:150px; height:auto; position:relative; z-index:1;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. WORKS 制作実績・サンプル ========== -->
+  <section id="works" class="section-padding">
+    <div style="max-width:1120px; margin:0 auto 40px; padding:0 40px;">
+      <div class="works-header" style="display:flex; align-items:baseline; justify-content:center; gap:20px; margin-bottom:8px; text-align:center;">
+        <h2 style="font-size:38px; font-weight:900; margin:0; color:#1a1a1a;">制作実績・サンプル</h2>
+      </div>
+      <svg width="200" height="12" viewBox="0 0 200 12" style="display:block; margin:0 auto;">
+        <path d="M2,8 Q50,2 100,8 Q150,14 198,8" stroke="#FFD419" stroke-width="3.5" fill="none" stroke-linecap="round"></path>
+      </svg>
+      <p style="font-size:14px; color:#666; margin:16px auto 0; text-align:center;">デザインの雰囲気や更新機能をぜひご確認ください。</p>
+    </div>
+
+    <!-- Carousel wrapper -->
+    <div class="carousel-container" id="worksCarousel" style="padding:20px 0 30px;">
+      <div class="carousel-track" id="worksTrack">
+
+        <!-- SAMPLE 01: machi no spoon -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">キッチンカー</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://machi-no-spoon.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_machi_no_spoon.png" alt="machi no spoon キッチンカー サンプルサイト" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">machi no spoon</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">まちのキッチンカーのサンプルサイト。Instagramだけでは伝えきれない情報を整理して届けます。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 出店予定</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 メニュー</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://machi-no-spoon.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 02: haru no oto -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">カフェ</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://haru-no-oto-sample.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_haru_no_oto.png" alt="haru no oto カフェ サンプルサイト" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">haru no oto</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">春の音が聞こえるようなゆったりカフェのサンプルサイト。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 NEWS</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 本日の焼き菓子</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 メニュー</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://haru-no-oto-sample.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 03: RUSTY POP VINTAGE -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">古着屋</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://rusty-pop-vintage.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_rusty_pop.png" alt="RUSTY POP VINTAGE 古着屋 サンプルサイト" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">RUSTY POP VINTAGE</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">アメカジ古着屋のサンプル。マンガのコマ割りで1点ものの魅力を引き立てます。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 新着アイテム</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 セール情報</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 営業カレンダー</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://rusty-pop-vintage.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 04: 森下工務店 -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">工務店</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://morishitakomuten.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_morishita.png" alt="森下工務店 サンプルサイト" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">森下工務店</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">地域密着の工務店サンプル。施工事例や想いを丁寧に伝える構成です。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 施工事例</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 お知らせ</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://morishitakomuten.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 05: Luna e Sole (納品事例) -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">サロン</span>
+            <span style="display:inline-block; background:#1a1a1a; font-size:10px; font-weight:700; color:#fff; padding:2px 8px; border-radius:20px; margin-left:4px;">✓ 納品事例</span>
+          </div>
+          <a href="https://luna-e-sole.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_luna_e_sole.png" alt="Luna e Sole サロン 納品事例" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">Luna e Sole</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">実際に営業中のサロン様のサイト。やさしい雰囲気と温かみが伝わるデザインです。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 お知らせ</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 ご予約案内</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://luna-e-sole.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 06: ごはんと酒 灯り -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">居酒屋</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://gohan-to-sake-akari.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_akari.png" alt="ごはんと酒 灯り 居酒屋 サンプルサイト" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">ごはんと酒 灯り</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">小さな居酒屋のサンプル。日替わりおすすめや季節のお酒を届けます。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 おすすめ</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 お知らせ</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://gohan-to-sake-akari.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- ===== DUPLICATE SET for infinite scroll ===== -->
+        <!-- SAMPLE 01 dup -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">キッチンカー</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://machi-no-spoon.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_machi_no_spoon.png" alt="machi no spoon" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">machi no spoon</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">まちのキッチンカーのサンプルサイト。Instagramだけでは伝えきれない情報を整理して届けます。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 出店予定</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 メニュー</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://machi-no-spoon.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 02 dup -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">カフェ</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://haru-no-oto-sample.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_haru_no_oto.png" alt="haru no oto" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">haru no oto</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">春の音が聞こえるようなゆったりカフェのサンプルサイト。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 NEWS</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 本日の焼き菓子</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 メニュー</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://haru-no-oto-sample.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 03 dup -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">古着屋</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://rusty-pop-vintage.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_rusty_pop.png" alt="RUSTY POP VINTAGE" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">RUSTY POP VINTAGE</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">アメカジ古着屋のサンプル。マンガのコマ割りで1点ものの魅力を引き立てます。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 新着アイテム</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 セール情報</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 営業カレンダー</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://rusty-pop-vintage.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 04 dup -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">工務店</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://morishitakomuten.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_morishita.png" alt="森下工務店" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">森下工務店</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">地域密着の工務店サンプル。施工事例や想いを丁寧に伝える構成です。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 施工事例</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 お知らせ</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://morishitakomuten.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 05 dup -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">サロン</span>
+            <span style="display:inline-block; background:#1a1a1a; font-size:10px; font-weight:700; color:#fff; padding:2px 8px; border-radius:20px; margin-left:4px;">✓ 納品事例</span>
+          </div>
+          <a href="https://luna-e-sole.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_luna_e_sole.png" alt="Luna e Sole" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">Luna e Sole</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">実際に営業中のサロン様のサイト。やさしい雰囲気と温かみが伝わるデザインです。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 お知らせ</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 ご予約案内</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://luna-e-sole.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+        <!-- SAMPLE 06 dup -->
+        <div class="work-card" style="flex:0 0 290px; background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:18px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+          <div style="padding:14px 18px 0;">
+            <span style="display:inline-block; background:#f0f0ea; font-size:11px; font-weight:700; color:#555; padding:3px 10px; border-radius:20px;">居酒屋</span>
+            <span style="display:inline-block; background:#f0f0ea; font-size:10px; color:#888; padding:2px 8px; border-radius:20px; margin-left:4px;">サンプル</span>
+          </div>
+          <a href="https://gohan-to-sake-akari.vercel.app/" target="_blank" rel="noopener noreferrer" style="display:block; margin:12px 18px; height:160px; border-radius:10px; overflow:hidden;">
+            <img src="assets/sample_akari.png" alt="ごはんと酒 灯り" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          </a>
+          <div style="padding:0 18px 18px;">
+            <p style="font-size:15px; font-weight:700; margin:0 0 4px; color:#1a1a1a;">ごはんと酒 灯り</p>
+            <p style="font-size:12px; color:#777; margin:0 0 10px; line-height:1.6;">小さな居酒屋のサンプル。日替わりおすすめや季節のお酒を届けます。</p>
+            <div style="display:flex; flex-wrap:wrap; gap:4px; margin-bottom:8px;">
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 おすすめ</span>
+              <span style="display:inline-block; background:#e7f4ec; font-size:10px; font-weight:700; color:#3a8a5c; padding:2px 8px; border-radius:20px;">🔄 お知らせ</span>
+            </div>
+            <p style="font-size:10px; color:#999; margin:0 0 12px;">📱 上記はアプリからカンタンに更新可能</p>
+            <a href="https://gohan-to-sake-akari.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:13px; padding:10px; border-radius:50px; text-decoration:none;">サイトを見る →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. PLAN 料金プラン ========== -->
+  <section id="price" class="section-padding" style="background:rgba(255,255,255,0.55);">
+    <div style="max-width:1120px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:14px;">
+        <h2 style="font-size:38px; font-weight:900; margin:0 0 8px; color:#1a1a1a;">料金プラン</h2>
+        <svg width="180" height="12" viewBox="0 0 180 12" style="display:block; margin:0 auto;"><path d="M2,8 Q45,2 90,8 Q135,14 178,8" stroke="#FFD419" stroke-width="3.5" fill="none" stroke-linecap="round"></path></svg>
+        <p style="font-size:14px; color:#666; margin:16px 0 0;">すべて取材・文章作成込みのお任せパッケージです</p>
+      </div>
+      <div class="plan-grid" style="margin-top:40px;">
+        <!-- PLAN 01 -->
+        <div style="background:#fff; border:2.5px solid #E07A7A; border-radius:20px; padding:32px 28px; position:relative; box-shadow:0 4px 24px rgba(224,122,122,0.15);">
+          <div style="position:absolute; top:-14px; left:24px; background:#E07A7A; color:#fff; font-size:12px; font-weight:900; padding:5px 16px; border-radius:20px;">★ 一番人気</div>
+          <div style="margin-bottom:6px;"><span style="font-size:11px; font-weight:700; color:#888; letter-spacing:1px;">PLAN 01</span></div>
+          <h3 style="font-size:22px; font-weight:900; margin:0 0 8px; color:#1a1a1a;">ライトプラン</h3>
+          <p style="font-size:13px; color:#666; margin:0 0 20px; line-height:1.6;">まずはホームページを持ちたい方向け</p>
+          <div style="margin-bottom:4px;"><span style="font-size:42px; font-weight:900; color:#1a1a1a;">¥50,000</span><span style="font-size:18px; font-weight:700; color:#555;">〜</span></div>
+          <p style="font-size:12px; color:#999; margin:0 0 24px;">税込・買い切り</p>
+          <div style="border-top:1px solid #f0f0f0; padding-top:20px; margin-bottom:24px;">
+            <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;">
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#E07A7A; font-weight:900; flex-shrink:0;">✓</span>取材インタビュー込み</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#E07A7A; font-weight:900; flex-shrink:0;">✓</span>対面・オンライン・SNSから選択可</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#E07A7A; font-weight:900; flex-shrink:0;">✓</span>SNSメッセージだけでも完結OK</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#E07A7A; font-weight:900; flex-shrink:0;">✓</span>原稿作成もまるごとお任せ</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#E07A7A; font-weight:900; flex-shrink:0;">✓</span>魅力的な文章はこちらで提案</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#E07A7A; font-weight:900; flex-shrink:0;">✓</span>スマホ対応デザイン</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#E07A7A; font-weight:900; flex-shrink:0;">✓</span>制作中の修正は何度でも無料</li>
+            </ul>
+          </div>
+          <a href="#cta" class="btn-hover" style="display:block; text-align:center; background:#E07A7A; color:#fff; font-weight:700; font-size:14px; padding:14px; border-radius:50px; text-decoration:none;">このプランで相談する →</a>
+        </div>
+        <!-- PLAN 02 -->
+        <div style="background:#fff; border:1.5px solid rgba(0,0,0,0.1); border-radius:20px; padding:32px 28px; box-shadow:0 2px 16px rgba(0,0,0,0.06);">
+          <div style="margin-bottom:6px;"><span style="font-size:11px; font-weight:700; color:#888; letter-spacing:1px;">PLAN 02</span></div>
+          <h3 style="font-size:22px; font-weight:900; margin:0 0 8px; color:#1a1a1a;">スタンダードプラン</h3>
+          <p style="font-size:13px; color:#666; margin:0 0 20px; line-height:1.6;">ライトプラン＋3〜5ページのしっかりした構成のホームページ</p>
+          <div style="margin-bottom:4px;"><span style="font-size:42px; font-weight:900; color:#1a1a1a;">¥80,000</span><span style="font-size:18px; font-weight:700; color:#555;">〜</span></div>
+          <p style="font-size:12px; color:#999; margin:0 0 24px;">税込・買い切り</p>
+          <div style="border-top:1px solid #f0f0f0; padding-top:20px; margin-bottom:24px;">
+            <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;">
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#6aabf7; font-weight:900; flex-shrink:0;">✓</span>ライトプランの内容をすべて含む</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#6aabf7; font-weight:900; flex-shrink:0;">✓</span>3〜5ページ構成</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#6aabf7; font-weight:900; flex-shrink:0;">✓</span>お問い合わせフォーム</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#6aabf7; font-weight:900; flex-shrink:0;">✓</span>地図・SNSリンク設置</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#6aabf7; font-weight:900; flex-shrink:0;">✓</span><span>Instagram自動連携<span style="display:block; font-size:11px; color:#aaa; margin-top:2px; font-weight:400;">※ビジネスアカウントへの切り替えが必要です</span></span></li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#6aabf7; font-weight:900; flex-shrink:0;">✓</span>制作中の修正は何度でも無料</li>
+            </ul>
+          </div>
+          <a href="#cta" class="btn-hover" style="display:block; text-align:center; background:#1a1a1a; color:#fff; font-weight:700; font-size:14px; padding:14px; border-radius:50px; text-decoration:none;">このプランで相談する →</a>
+        </div>
+        <!-- OPTION -->
+        <div style="background:#fff; border:2px solid #3aaa7a; border-radius:20px; padding:32px 28px; position:relative; box-shadow:0 4px 24px rgba(58,170,122,0.12);">
+          <div style="position:absolute; top:-14px; left:24px; background:#3aaa7a; color:#fff; font-size:12px; font-weight:900; padding:5px 16px; border-radius:20px;">オススメ</div>
+          <div style="margin-bottom:6px;"><span style="font-size:11px; font-weight:700; color:#888; letter-spacing:1px;">OPTION</span></div>
+          <h3 style="font-size:22px; font-weight:900; margin:0 0 8px; color:#1a1a1a;">安心保守サポート</h3>
+          <p style="font-size:13px; color:#666; margin:0 0 20px; line-height:1.6;">作ったあとも安心して使い続けたい方に</p>
+          <div style="margin-bottom:4px;"><span style="font-size:36px; font-weight:900; color:#1a1a1a;">¥1,500</span><span style="font-size:16px; font-weight:700; color:#555;"> / 月〜（税込）</span></div>
+          <p style="font-size:12px; color:#999; margin:0 0 24px;">月額・継続プラン</p>
+          <div style="border-top:1px solid #f0f0f0; padding-top:20px; margin-bottom:16px;">
+            <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px;">
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#3aaa7a; font-weight:900; flex-shrink:0;">✓</span>ドメイン・サーバー維持管理</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#3aaa7a; font-weight:900; flex-shrink:0;">✓</span>毎月の軽微な修正（月2回程度）</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#3aaa7a; font-weight:900; flex-shrink:0;">✓</span>写真・文章の差し替え</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#3aaa7a; font-weight:900; flex-shrink:0;">✓</span>Instagram再連携メンテナンス</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#3aaa7a; font-weight:900; flex-shrink:0;">✓</span>SNS・お電話での操作サポート</li>
+              <li style="font-size:13px; color:#333; display:flex; gap:8px; align-items:flex-start;"><span style="color:#3aaa7a; font-weight:900; flex-shrink:0;">✓</span>更新アプリの提供</li>
+            </ul>
+          </div>
+          <div style="background:#f5f4ef; border-radius:10px; padding:12px 14px; margin-bottom:20px;">
+            <p style="font-size:11px; color:#888; margin:0; line-height:1.7;">保守を停止すると更新アプリは利用できなくなります。ホームページの修正や操作サポートは別途スポット費用が必要です。</p>
+          </div>
+          <a href="#cta" class="btn-hover" style="display:block; text-align:center; background:#3aaa7a; color:#fff; font-weight:700; font-size:14px; padding:14px; border-radius:50px; text-decoration:none;">このプランで相談する →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. FLOW ご依頼の流れ ========== -->
+  <section id="process" class="section-padding">
+    <div style="max-width:1120px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:14px;">
+        <h2 style="font-size:38px; font-weight:900; margin:0 0 8px; color:#1a1a1a;">ご依頼の流れ</h2>
+        <svg width="180" height="12" viewBox="0 0 180 12" style="display:block; margin:0 auto;"><path d="M2,8 Q45,2 90,8 Q135,14 178,8" stroke="#FFD419" stroke-width="3.5" fill="none" stroke-linecap="round"></path></svg>
+      </div>
+      <div class="flow-steps" style="margin-top:48px;">
+        <div style="text-align:center; position:relative;">
+          <div style="width:56px; height:56px; background:#FFD419; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:11px; font-weight:900; color:#1a1a1a;">STEP<br>01</div>
+          <img src="assets/no35_flow_consultation_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+          <p style="font-size:14px; font-weight:700; margin:0; color:#1a1a1a;">相談</p>
+          <div style="position:absolute; right:-14px; top:24px; z-index:1;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="#FFD419" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        </div>
+        <div style="text-align:center; position:relative;">
+          <div style="width:56px; height:56px; background:#7EC8D4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:11px; font-weight:900; color:#fff;">STEP<br>02</div>
+          <img src="assets/no36_flow_hearing_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+          <p style="font-size:14px; font-weight:700; margin:0; color:#1a1a1a;">ヒアリング</p>
+          <div style="position:absolute; right:-14px; top:24px; z-index:1;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="#FFD419" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        </div>
+        <div style="text-align:center; position:relative;">
+          <div style="width:56px; height:56px; background:#E07A7A; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:11px; font-weight:900; color:#fff;">STEP<br>03</div>
+          <img src="assets/no37_flow_proposal_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+          <p style="font-size:14px; font-weight:700; margin:0; color:#1a1a1a;">ご提案</p>
+          <div style="position:absolute; right:-14px; top:24px; z-index:1;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="#FFD419" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        </div>
+        <div style="text-align:center; position:relative;">
+          <div style="width:56px; height:56px; background:#6aabf7; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:11px; font-weight:900; color:#fff;">STEP<br>04</div>
+          <img src="assets/no38_flow_production_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+          <p style="font-size:14px; font-weight:700; margin:0; color:#1a1a1a;">制作</p>
+          <div style="position:absolute; right:-14px; top:24px; z-index:1;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="#FFD419" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        </div>
+        <div style="text-align:center; position:relative;">
+          <div style="width:56px; height:56px; background:#a78bfa; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:11px; font-weight:900; color:#fff;">STEP<br>05</div>
+          <img src="assets/no39_flow_publish_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+          <p style="font-size:14px; font-weight:700; margin:0; color:#1a1a1a;">公開</p>
+          <div style="position:absolute; right:-14px; top:24px; z-index:1;"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="#FFD419" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:56px; height:56px; background:#3aaa7a; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:11px; font-weight:900; color:#fff;">STEP<br>06</div>
+          <img src="assets/no40_flow_update_support_icon.png" style="width:64px; height:64px; object-fit:contain; margin-bottom:10px;" alt="">
+          <p style="font-size:14px; font-weight:700; margin:0; color:#1a1a1a;">更新サポート</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7.5 ABOUT ME ========== -->
+  <section id="about" class="section-padding">
+    <div class="section-2col" style="max-width:1120px; margin:0 auto; display:flex; gap:60px; align-items:center;">
+      <div style="flex:0 0 280px; position:relative; text-align:center;">
+        <img src="assets/about_me_illustration.png" style="width:260px; height:auto; border-radius:50%; box-shadow:0 8px 30px rgba(0,0,0,0.12);" alt="">
+        <div style="display:inline-flex; align-items:center; gap:6px; background:#fff; border-radius:20px; padding:8px 18px; margin-top:16px; box-shadow:0 2px 10px rgba(0,0,0,0.08); font-size:13px; font-weight:700; color:#1a1a1a;">
+          📍 宮城県北
+        </div>
+      </div>
+      <div style="flex:1;">
+        <p style="font-size:13px; font-weight:900; letter-spacing:2px; color:#c9a86a; margin:0 0 10px;">ABOUT ME</p>
+        <h2 style="font-size:34px; font-weight:900; margin:0 0 24px; color:#1a1a1a;">
+          作っている人<span style="position:relative; display:inline-block;"><span style="position:absolute; bottom:2px; left:-4px; right:-4px; height:14px; background:#F7CBB8; z-index:0;"></span><span style="position:relative; z-index:1;">の</span></span>こと
+        </h2>
+        <p style="font-size:19px; font-weight:700; margin:0 0 18px; color:#1a1a1a; line-height:1.6;">
+          私も同じ、<span style="background:linear-gradient(transparent 60%, #c7e8d4 60%);">宮城県北エリアの少人数事業者</span>です。
         </p>
-        <p class="text-xs text-inkMute leading-relaxed mb-5">
-          ※Instagram投稿をホームページに自動表示するには、Instagramアカウントをビジネスアカウントに切り替える必要があります。
-        </p>
-        <!-- Instagram feed (EmbedSocial) — 4×1, tiles auto-fit to container -->
-        <div class="es-feed-wrap rounded-2xl overflow-hidden bg-cream/40 p-2">
-          <div class="embedsocial-hashtag" data-ref="26c048f6924f89c7fe3c0ff47254c6acff0d7574">
-            <a class="feed-powered-by-es feed-powered-by-es-feed-img es-widget-branding"
-               href="https://embedsocial.jp/"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="EmbedSocialで作成しました">
-              <img src="https://embedsocial.com/cdn/icon/embedsocial-logo.webp" alt="EmbedSocial" />
-              <div class="es-widget-branding-text">EmbedSocialで作成しました</div>
-            </a>
-          </div>
-          <script>
-            (function (d, s, id) {
-              var js;
-              if (d.getElementById(id)) { return; }
-              js = d.createElement(s); js.id = id;
-              js.src = "https://embedsocial.com/cdn/ht.js";
-              d.getElementsByTagName("head")[0].appendChild(js);
-            }(document, "script", "EmbedSocialHashtagScript"));
-          </script>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================== -->
-<!-- 5. PRICING -->
-<!-- ================================================== -->
-<section id="price" class="py-24">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <div class="font-mono text-xs tracking-[0.3em] text-terraDeep mb-3">PRICING</div>
-      <h2 class="font-maru font-black text-3xl md:text-4xl leading-snug">
-        シンプルな<span class="marker-terra">料金プラン</span>
-      </h2>
-      <p class="text-inkSoft mt-4 text-sm md:text-base">追加料金一切なし、最初にお伝えする金額のみの明朗会計です。</p>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-5 items-stretch">
-      <!-- plan 1 (featured — 一番人気) -->
-      <div class="relative bg-paper rounded-3xl border-2 border-terra p-7 flex flex-col shadow-card md:-mt-4 md:mb-4">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-terra text-white text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap">
-          <i class="fa-solid fa-star mr-1"></i> 一番人気
-        </div>
-        <div class="font-mono text-xs tracking-widest text-terraDeep mb-2">PLAN 01</div>
-        <h3 class="font-maru font-black text-xl mb-2">ライトプラン</h3>
-        <p class="text-sm text-inkSoft mb-5 leading-relaxed">まずはホームページを持ちたい方向け</p>
-        <div class="mb-5">
-          <span class="font-maru font-black text-4xl text-terraDeep">¥50,000</span>
-          <span class="text-sm text-inkMute">〜</span>
-          <span class="block text-xs text-inkMute mt-1">税込・買い切り</span>
-        </div>
-        <ul class="space-y-2 text-sm text-inkSoft mb-7 flex-1">
-          <li><i class="fa-solid fa-check text-terra mr-2"></i>取材インタビュー込み</li>
-          <li><i class="fa-solid fa-check text-terra mr-2"></i>対面・オンライン・SNSでのメッセージから選択可能</li>
-          <li><i class="fa-solid fa-check text-terra mr-2"></i><strong>SNSでのメッセージだけでも完結OK</strong></li>
-          <li><i class="fa-solid fa-check text-terra mr-2"></i>原稿作成もすべてまるごとお任せ</li>
-          <li><i class="fa-solid fa-check text-terra mr-2"></i>魅力的な文章はこちらで提案</li>
-          <li><i class="fa-solid fa-check text-terra mr-2"></i>スマホ対応デザイン</li>
-          <li><i class="fa-solid fa-check text-terra mr-2"></i><strong class="text-terraDeep">制作中の修正は何度でも無料（納品前）</strong></li>
-        </ul>
-        <a href="#contact" class="block text-center bg-terra hover:bg-terraDeep text-white font-bold py-3 rounded-full transition shadow-cta">このプランで相談する</a>
-      </div>
-
-      <!-- plan 2 -->
-      <div class="bg-paper rounded-3xl border border-line p-7 flex flex-col shadow-soft">
-        <div class="font-mono text-xs tracking-widest text-inkMute mb-2">PLAN 02</div>
-        <h3 class="font-maru font-black text-xl mb-2">スタンダードプラン</h3>
-        <p class="text-sm text-inkSoft mb-5 leading-relaxed">ライトプラン＋3〜5ページの<br />しっかりした構成のホームページ</p>
-        <div class="mb-5">
-          <span class="font-maru font-black text-4xl text-ink">¥80,000</span>
-          <span class="text-sm text-inkMute">〜</span>
-          <span class="block text-xs text-inkMute mt-1">税込・買い切り</span>
-        </div>
-        <ul class="space-y-2 text-sm text-inkSoft mb-7 flex-1">
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>ライトプランの内容をすべて含む</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>3〜5ページ構成</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>お問い合わせフォーム</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>地図・SNSリンク設置</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>Instagram自動連携</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i><strong class="text-forestDeep">制作中の修正は何度でも無料（納品前）</strong></li>
-        </ul>
-        <a href="#contact" class="block text-center bg-cream2 hover:bg-line text-ink font-bold py-3 rounded-full transition">このプランで相談する</a>
-      </div>
-
-      <!-- plan 3 (オススメ) -->
-      <div class="relative bg-paper rounded-3xl border border-line p-7 flex flex-col shadow-soft mt-4">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-forestDeep text-white text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap">
-          <i class="fa-solid fa-thumbs-up mr-1"></i> オススメ
-        </div>
-        <div class="font-mono text-xs tracking-widest text-inkMute mb-2">OPTION（任意）</div>
-        <h3 class="font-maru font-black text-xl mb-2">安心保守サポート</h3>
-        <p class="text-sm text-inkSoft mb-5 leading-relaxed">作ったあとも安心して使い続けたい方に</p>
-        <div class="mb-5">
-          <span class="font-maru font-black text-4xl text-ink">¥1,500</span>
-          <span class="text-sm text-inkMute"> / 月〜（税込）</span>
-        </div>
-        <ul class="space-y-2 text-sm text-inkSoft mb-4 flex-1">
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>ドメイン・サーバー維持管理</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>毎月の軽微な修正（月2回程度まで）</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>写真・文章の差し替え</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>Instagram再連携メンテナンス</li>
-          <li><i class="fa-solid fa-check text-forest mr-2"></i>SNS・お電話での操作サポート</li>
-          <li><i class="fa-solid fa-check text-terraDeep mr-2"></i><strong class="text-terraDeep">お知らせ・メニュー表 更新アプリの提供</strong></li>
-        </ul>
-        <div class="mb-5 bg-cream2/80 border border-line rounded-xl px-4 py-3 text-xs text-inkSoft leading-relaxed">
-          <i class="fa-solid fa-circle-info text-inkMute mr-1"></i>保守を停止すると更新アプリは利用できなくなります。ホームページの修正（軽微なものも含む）や操作サポートは別途スポット費用が必要です。
-        </div>
-        <a href="#contact" class="block text-center bg-cream2 hover:bg-line text-ink font-bold py-3 rounded-full transition">このプランで相談する</a>
-      </div>
-    </div>
-
-    <div class="mt-8 max-w-2xl mx-auto bg-forestSoft border border-line rounded-2xl px-5 py-4 text-sm text-ink leading-relaxed">
-      <div class="flex items-start gap-3">
-        <i class="fa-solid fa-circle-info text-forest mt-1"></i>
-        <div>
-          <strong class="font-bold text-forestDeep">安心保守サポートは任意です</strong>が、入っておいた方が長い目で見て安心・おトクです。<br />
-          「もしのとき」を追加請求しない、誠実な取り組みのための仕組みです。
-        </div>
-      </div>
-    </div>
-
-    <p class="text-center text-xs text-inkMute mt-5">
-      表示価格はすべて税込。お見積もり後に追加費用は発生しません。
-    </p>
-  </div>
-</section>
-
-<!-- ================================================== -->
-<!-- 6. PROCESS -->
-<!-- ================================================== -->
-<section id="process" class="bg-cream2/70 border-y border-line py-20">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-14">
-      <div class="font-mono text-xs tracking-[0.3em] text-terraDeep mb-3">PROCESS</div>
-      <h2 class="font-maru font-black text-3xl md:text-4xl leading-snug">
-        ご相談から公開までの<span class="marker-terra">流れ</span>
-      </h2>
-    </div>
-
-    <div class="relative">
-      <!-- connector line (desktop only) -->
-      <div class="hidden md:block absolute top-10 left-[12.5%] right-[12.5%] h-0.5 bg-line"></div>
-
-      <div class="grid md:grid-cols-4 gap-6 md:gap-4 relative">
-        <!-- step 1 -->
-        <div class="relative flex flex-col items-center text-center">
-          <div class="relative z-10 w-20 h-20 rounded-full num-circle text-white font-maru font-black text-3xl flex items-center justify-center shadow-card">1</div>
-          <h3 class="font-maru font-bold text-lg mt-5 mb-2">おしゃべり or SNS<br /><span class="text-sm text-inkSoft font-normal">（ヒアリング）</span></h3>
-          <p class="text-sm text-inkSoft leading-relaxed">対面・オンラインでのおしゃべり、またはSNSのメッセージのやり取り、お好きな方で。話し下手でも心配ありません。</p>
-        </div>
-        <!-- step 2 -->
-        <div class="relative flex flex-col items-center text-center">
-          <div class="relative z-10 w-20 h-20 rounded-full num-circle text-white font-maru font-black text-3xl flex items-center justify-center shadow-card">2</div>
-          <h3 class="font-maru font-bold text-lg mt-5 mb-2">超速デザイン提案<br /><span class="text-sm text-inkSoft font-normal">（最短3日）</span></h3>
-          <p class="text-sm text-inkSoft leading-relaxed">AIを活用してたたき台を高速作成。「思っていたのと違う」を防ぎます。</p>
-        </div>
-        <!-- step 3 -->
-        <div class="relative flex flex-col items-center text-center">
-          <div class="relative z-10 w-20 h-20 rounded-full num-circle text-white font-maru font-black text-3xl flex items-center justify-center shadow-card">3</div>
-          <h3 class="font-maru font-bold text-lg mt-5 mb-2">納得いくまで修正<br /><span class="text-sm text-inkSoft font-normal">（何度でも無料）</span></h3>
-          <p class="text-sm text-inkSoft leading-relaxed">納品前であれば、気になる部分の修正は何度でも無料で対応します。</p>
-        </div>
-        <!-- step 4 -->
-        <div class="relative flex flex-col items-center text-center">
-          <div class="relative z-10 w-20 h-20 rounded-full num-circle text-white font-maru font-black text-3xl flex items-center justify-center shadow-card">4</div>
-          <h3 class="font-maru font-bold text-lg mt-5 mb-2">公開・運用スタート<br /><span class="text-sm text-inkSoft font-normal">（最短1週間）</span></h3>
-          <p class="text-sm text-inkSoft leading-relaxed">公開後も安心保守サポートで伴走。困ったらLINEで一言ください。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================================================== -->
-<!-- 7. ABOUT ME -->
-<!-- ================================================== -->
-<section id="about" class="py-24">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <div class="font-mono text-xs tracking-[0.3em] text-terraDeep mb-3">ABOUT ME</div>
-      <h2 class="font-maru font-black text-3xl md:text-4xl leading-snug">
-        作っている人の<span class="marker-terra">こと</span>
-      </h2>
-    </div>
-
-    <div class="grid md:grid-cols-[260px_1fr] gap-10 items-center">
-      <div class="flex justify-center">
-        <div class="relative">
-          <div class="w-56 h-56 rounded-full bg-paper border-4 border-paper shadow-card overflow-hidden">
-            <img src="assets/profile_icon.png" alt="HIto-Oshi（ヒトオシ）プロフィール" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="absolute -bottom-2 -right-2 bg-paper border border-line rounded-full px-3 py-1.5 shadow-soft text-xs font-mono tracking-widest text-inkSoft">
-            <i class="fa-solid fa-location-dot text-terra mr-1"></i> 宮城県北
-          </div>
-        </div>
-      </div>
-      <div>
-        <p class="font-maru text-xl md:text-2xl font-bold leading-relaxed mb-4">
-          私も同じ、<span class="marker-forest">宮城県北エリアの少人数事業者</span>です。
-        </p>
-        <p class="text-inkSoft leading-relaxed mb-3">
-          大手の営業マンのように、難しいIT用語は使いません。<br />
+        <p style="font-size:14px; color:#555; line-height:2; margin:0 0 14px;">
+          大手の営業マンのように、難しいIT用語は使いません。<br>
           あなたのお仕事の「相棒」として、ホームページを通じて一緒に盛り上げていきたいと思っています。
         </p>
-        <p class="text-inkSoft leading-relaxed">
-          ホームページは作って終わりではなく、お店と一緒に育てていくもの。<br />
+        <p style="font-size:14px; color:#555; line-height:2; margin:0 0 24px;">
+          ホームページは作って終わりではなく、お店と一緒に育てていくもの。<br>
           大崎・登米・栗原・石巻を中心に、長く付き合える距離感を大切にしています。
         </p>
-
-        <div class="mt-6 flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-forestSoft text-forestDeep rounded-full text-xs font-bold">宮城県北エリア</span>
-          <span class="px-3 py-1 bg-terraSoft text-terraDeep rounded-full text-xs font-bold">AI活用</span>
-          <span class="px-3 py-1 bg-butter text-terraDeep rounded-full text-xs font-bold">少人数事業者専門</span>
-          <span class="px-3 py-1 bg-cream2 text-ink rounded-full text-xs font-bold">SNS完結OK</span>
-          <span class="px-3 py-1 bg-cream2 text-ink rounded-full text-xs font-bold">伴走サポート</span>
+        <div class="tag-wrap" style="display:flex; gap:8px; flex-wrap:wrap;">
+          <span style="background:#e7f4ec; color:#3a8a5c; font-size:12px; font-weight:700; padding:6px 16px; border-radius:20px;">宮城県北エリア</span>
+          <span style="background:#fdeee8; color:#c9704a; font-size:12px; font-weight:700; padding:6px 16px; border-radius:20px;">AI活用</span>
+          <span style="background:#fdf3d9; color:#a8842a; font-size:12px; font-weight:700; padding:6px 16px; border-radius:20px;">少人数事業者専門</span>
+          <span style="background:#eef1f6; color:#5a6b8a; font-size:12px; font-weight:700; padding:6px 16px; border-radius:20px;">SNS完結OK</span>
+          <span style="background:#f4eef8; color:#8a5aab; font-size:12px; font-weight:700; padding:6px 16px; border-radius:20px;">伴走サポート</span>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================================================== -->
-<!-- 8. FAQ -->
-<!-- ================================================== -->
-<section id="faq" class="bg-cream2/70 border-y border-line py-20">
-  <div class="max-w-3xl mx-auto px-6">
-    <div class="text-center mb-12">
-      <div class="font-mono text-xs tracking-[0.3em] text-terraDeep mb-3">FAQ</div>
-      <h2 class="font-maru font-black text-3xl md:text-4xl leading-snug">
-        よくある<span class="marker-terra">ご質問</span>
-      </h2>
-    </div>
-
-    <div class="space-y-3">
-      <details class="group bg-paper border border-line rounded-2xl shadow-soft" open>
-        <summary class="list-none cursor-pointer flex items-start gap-4 p-5">
-          <span class="w-8 h-8 rounded-full bg-terraSoft text-terraDeep flex items-center justify-center font-maru font-black flex-shrink-0">Q</span>
-          <span class="flex-1 font-bold pt-1">パソコンが苦手・話すのが苦手でも大丈夫ですか？</span>
-          <i class="fa-solid fa-plus text-inkMute acc-icon mt-2"></i>
-        </summary>
-        <div class="px-5 pb-5 pl-[68px] text-inkSoft leading-relaxed">
-          <span class="inline-block w-7 h-7 rounded-full bg-forestSoft text-forest text-center font-maru font-black mr-2 align-middle">A</span>
-          スマホでSNSのメッセージが使えれば100%大丈夫です。無理におしゃべりしなくても、使い慣れたSNSのやり取りだけでホームページを完成させられます。簡単なアンケートシートにご回答いただく感覚で進められるので、話すのが苦手な方もご安心ください。
+  <!-- ========== 8. FAQ ========== -->
+  <section id="faq" class="section-padding" style="background:rgba(255,255,255,0.55);">
+    <div style="max-width:1120px; margin:0 auto;">
+      <div class="section-2col" style="display:flex; gap:60px; align-items:flex-start;">
+        <div class="faq-left-col" style="flex:0 0 220px; text-align:center;">
+          <img src="assets/no41_faq_question_person.png" style="width:160px; height:auto; margin-bottom:16px;" alt="">
+          <h2 style="font-size:26px; font-weight:900; margin:0; color:#1a1a1a; line-height:1.3;">よくある<br>ご質問</h2>
+          <svg width="120" height="12" viewBox="0 0 120 12" style="display:block; margin:10px auto 0;"><path d="M2,8 Q30,2 60,8 Q90,14 118,8" stroke="#FFD419" stroke-width="3" fill="none" stroke-linecap="round"></path></svg>
         </div>
-      </details>
-
-      <details class="group bg-paper border border-line rounded-2xl shadow-soft">
-        <summary class="list-none cursor-pointer flex items-start gap-4 p-5">
-          <span class="w-8 h-8 rounded-full bg-terraSoft text-terraDeep flex items-center justify-center font-maru font-black flex-shrink-0">Q</span>
-          <span class="flex-1 font-bold pt-1">納品後に不具合が起きたり、文字を直したくなったら？</span>
-          <i class="fa-solid fa-plus text-inkMute acc-icon mt-2"></i>
-        </summary>
-        <div class="px-5 pb-5 pl-[68px] text-inkSoft leading-relaxed">
-          <span class="inline-block w-7 h-7 rounded-full bg-forestSoft text-forest text-center font-maru font-black mr-2 align-middle">A</span>
-          月額1,500円の安心保守プランにご加入いただければ、追加料金なしでちょっとした修正（新メニュー追加・写真差し替えなど月2回程度まで）やシステムのメンテナンスを行います。任意加入ですが、長い目で見て一番安心・おトクです。
+        <div style="flex:1; display:flex; flex-direction:column; gap:12px;">
+          <!-- Q1 -->
+          <div style="background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:14px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.04);">
+            <div class="faq-q" onclick="toggleFaq(this)" style="display:flex; align-items:center; gap:14px; padding:20px 22px;">
+              <span style="width:32px; height:32px; background:#FFD419; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:900; color:#1a1a1a; flex-shrink:0;">Q</span>
+              <p style="font-size:15px; font-weight:700; margin:0; flex:1; color:#1a1a1a;">パソコンが苦手でも大丈夫ですか？</p>
+              <span class="faq-icon" style="font-size:22px; font-weight:300; color:#aaa; flex-shrink:0; line-height:1;">+</span>
+            </div>
+            <div class="faq-answer" style="display:none; padding:0 22px 20px 68px;">
+              <p style="font-size:14px; color:#555; line-height:1.8; margin:0;">はい、大丈夫です。スマホだけで更新できる仕組みをご用意しているので、パソコンが苦手な方も安心してお使いいただけます。操作サポートも承ります。</p>
+            </div>
+          </div>
+          <!-- Q2 -->
+          <div style="background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:14px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.04);">
+            <div class="faq-q" onclick="toggleFaq(this)" style="display:flex; align-items:center; gap:14px; padding:20px 22px;">
+              <span style="width:32px; height:32px; background:#FFD419; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:900; color:#1a1a1a; flex-shrink:0;">Q</span>
+              <p style="font-size:15px; font-weight:700; margin:0; flex:1; color:#1a1a1a;">写真が少なくても作れますか？</p>
+              <span class="faq-icon" style="font-size:22px; font-weight:300; color:#aaa; flex-shrink:0; line-height:1;">+</span>
+            </div>
+            <div class="faq-answer" style="display:none; padding:0 22px 20px 68px;">
+              <p style="font-size:14px; color:#555; line-height:1.8; margin:0;">はい、ご安心ください。写真の撮り方のアドバイスや、フリー素材の活用なども含めてご提案します。まずはご相談ください。</p>
+            </div>
+          </div>
+          <!-- Q3 -->
+          <div style="background:#fff; border:1px solid rgba(0,0,0,0.09); border-radius:14px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.04);">
+            <div class="faq-q" onclick="toggleFaq(this)" style="display:flex; align-items:center; gap:14px; padding:20px 22px;">
+              <span style="width:32px; height:32px; background:#FFD419; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:900; color:#1a1a1a; flex-shrink:0;">Q</span>
+              <p style="font-size:15px; font-weight:700; margin:0; flex:1; color:#1a1a1a;">公開後の更新も相談できますか？</p>
+              <span class="faq-icon" style="font-size:22px; font-weight:300; color:#aaa; flex-shrink:0; line-height:1;">+</span>
+            </div>
+            <div class="faq-answer" style="display:none; padding:0 22px 20px 68px;">
+              <p style="font-size:14px; color:#555; line-height:1.8; margin:0;">もちろんです。安心保守サポートにご加入いただければ、公開後も継続してサポートいたします。アプリでの更新もお任せください。</p>
+            </div>
+          </div>
         </div>
-      </details>
-
-      <details class="group bg-paper border border-line rounded-2xl shadow-soft">
-        <summary class="list-none cursor-pointer flex items-start gap-4 p-5">
-          <span class="w-8 h-8 rounded-full bg-terraSoft text-terraDeep flex items-center justify-center font-maru font-black flex-shrink-0">Q</span>
-          <span class="flex-1 font-bold pt-1">追加料金が発生することはありますか？</span>
-          <i class="fa-solid fa-plus text-inkMute acc-icon mt-2"></i>
-        </summary>
-        <div class="px-5 pb-5 pl-[68px] text-inkSoft leading-relaxed">
-          <span class="inline-block w-7 h-7 rounded-full bg-forestSoft text-forest text-center font-maru font-black mr-2 align-middle">A</span>
-          最初にお見積もりした金額以外に、勝手に料金を発生させることはありません。制作中の修正は何度でも無料です。途中で「やっぱりこの機能も…」となった場合は、必ず事前にご相談・お見積もりをお出しします。
-        </div>
-      </details>
-
-      <details class="group bg-paper border border-line rounded-2xl shadow-soft">
-        <summary class="list-none cursor-pointer flex items-start gap-4 p-5">
-          <span class="w-8 h-8 rounded-full bg-terraSoft text-terraDeep flex items-center justify-center font-maru font-black flex-shrink-0">Q</span>
-          <span class="flex-1 font-bold pt-1">宮城県北エリア以外の地域でも依頼できますか？</span>
-          <i class="fa-solid fa-plus text-inkMute acc-icon mt-2"></i>
-        </summary>
-        <div class="px-5 pb-5 pl-[68px] text-inkSoft leading-relaxed">
-          <span class="inline-block w-7 h-7 rounded-full bg-forestSoft text-forest text-center font-maru font-black mr-2 align-middle">A</span>
-          大崎・登米・栗原・石巻を中心に、宮城県全域・東北エリアの方も歓迎です。オンライン・SNSでのやり取りで完結できるため、遠方の方もお気軽にご相談ください。
-        </div>
-      </details>
-    </div>
-  </div>
-</section>
-
-</main><!-- /#main-content -->
-
-<!-- ================================================== -->
-<!-- 9. FINAL CTA / FOOTER -->
-<!-- ================================================== -->
-<footer id="contact" class="relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-forest to-forestDeep"></div>
-  <div class="absolute -top-32 -right-32 w-[28rem] h-[28rem] rounded-full bg-terra/30 blur-3xl pointer-events-none"></div>
-  <div class="absolute -bottom-32 -left-32 w-[28rem] h-[28rem] rounded-full bg-butter/20 blur-3xl pointer-events-none"></div>
-
-  <div class="relative max-w-3xl mx-auto px-6 py-24 text-center text-white">
-    <div class="font-mono text-xs tracking-[0.3em] text-butter/90 mb-4">LET'S TALK</div>
-    <h2 class="font-maru font-black text-3xl md:text-5xl leading-snug mb-5">
-      まずは気軽に<br />
-      おしゃべり、またはSNSのメッセージで。
-    </h2>
-    <p class="text-cream/90 leading-relaxed mb-10">
-      ご相談・お見積もりは無料です。<br />
-      営業電話・しつこい連絡はいたしません。<br class="hidden md:inline" />
-      「ちょっと聞いてみたい」だけでも、お気軽にどうぞ。
-    </p>
-
-    <div class="flex justify-center">
-      <a href="https://lin.ee/x9PBREa" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-white text-forestDeep font-bold px-8 py-5 rounded-full shadow-cta hover:scale-[1.02] transition">
-        <i class="fa-brands fa-line text-2xl text-[#06c755]"></i>
-        <span class="text-lg">LINEで相談してみる</span>
-      </a>
-    </div>
-
-    <nav aria-label="フッターナビゲーション" class="mt-12 pt-8 border-t border-white/15 text-sm text-cream/70 flex flex-col md:flex-row items-center justify-center gap-3">
-      <div class="flex items-center gap-2">
-        <img src="assets/hitooshi_logo.png" alt="HIto-Oshiロゴ" class="w-7 h-7 rounded-full bg-paper object-cover" />
-        <span class="font-maru font-bold">HIto-Oshi（ヒトオシ）</span>
       </div>
-      <div class="font-mono text-xs tracking-widest">© 2026 HIto-Oshi · MIYAGI</div>
-    </nav>
-  </div>
-</footer>
+    </div>
+  </section>
 
-<!-- ================================================== -->
-<!-- MOBILE MENU SCRIPT -->
-<!-- ================================================== -->
+  <!-- ========== 9. BOTTOM CTA ========== -->
+  <section id="cta" style="padding:100px 40px; position:relative; overflow:hidden;">
+    <div style="position:absolute; top:-40px; right:-60px; width:320px; opacity:0.07; pointer-events:none; transform:rotate(15deg);">
+      <img src="assets/no02_marker_decoration_set.png" style="width:100%; height:auto;" alt="">
+    </div>
+    <div style="position:absolute; bottom:-40px; left:-40px; width:260px; opacity:0.07; pointer-events:none; transform:rotate(-10deg);">
+      <img src="assets/no02_marker_decoration_set.png" style="width:100%; height:auto;" alt="">
+    </div>
+    <div style="max-width:1120px; margin:0 auto;">
+      <div class="cta-inner" style="display:flex; gap:60px; align-items:flex-start;">
+        <div class="cta-main-copy" style="flex:1; position:relative;">
+          <div class="cta-plant" style="position:absolute; bottom:-20px; left:-40px; width:120px; pointer-events:none;">
+            <img src="assets/no42_cta_plant_mug_decoration.png" style="width:145px; height:auto;" alt="">
+          </div>
+          <h2 style="font-size:42px; font-weight:900; line-height:1.3; margin:0 0 16px; color:#1a1a1a; position:relative; z-index:1;">
+            まずは、<br>
+            <span style="position:relative; display:inline-block;">
+              <span style="position:absolute; bottom:2px; left:-5px; right:-5px; height:16px; background:#FFD419; opacity:0.5; border-radius:3px; z-index:0;"></span>
+              <span style="position:relative; z-index:1;">SNSのメッセージから</span>
+            </span>
+            <br>お気軽にご相談ください。
+          </h2>
+          <div style="margin:0 0 20px;">
+            <svg width="260" height="14" viewBox="0 0 260 14"><path d="M4,10 Q65,3 130,10 Q195,17 256,10" stroke="#FFD419" stroke-width="3.5" fill="none" stroke-linecap="round"></path></svg>
+          </div>
+          <p style="font-size:14px; color:#666; margin:0; line-height:1.8;">お店の"もう一押し"を、Webから。</p>
+          <div style="margin-top:24px; max-width:280px;">
+            <img src="assets/no45_cta_handwritten_note.png" style="width:308px; height:auto; max-width:260px;" alt="">
+          </div>
+        </div>
+        <div class="cta-right-col" style="flex:0 0 440px; display:flex; flex-direction:column; gap:20px;">
+          <!-- LINE card -->
+          <div style="background:#fff; border-radius:20px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,0.1);">
+            <div style="background:linear-gradient(135deg,#00B900,#00d415); padding:16px 24px; display:flex; align-items:center; gap:12px;">
+              <span style="font-size:16px; font-weight:900; color:#fff;">LINE</span>
+              <span style="font-size:13px; color:rgba(255,255,255,0.85); font-weight:500;">で相談する</span>
+            </div>
+            <div class="cta-card-row" style="padding:20px 24px; display:flex; gap:16px; align-items:flex-end;">
+              <div class="cta-card-text" style="flex:1;">
+                <p style="font-size:12px; color:#aaa; margin:0 0 4px; font-weight:500;">受付時間</p>
+                <p style="font-size:14px; font-weight:700; color:#1a1a1a; margin:0 0 8px;">24時間受付中</p>
+                <p style="font-size:12px; color:#666; margin:0 0 16px; line-height:1.6;">返信は営業時間内に対応します</p>
+                <a href="https://lin.ee/x9PBREa" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:inline-flex; align-items:center; gap:6px; background:#00B900; color:#fff; font-weight:700; font-size:13px; padding:11px 22px; border-radius:50px; text-decoration:none;">
+                  LINEで相談する →
+                </a>
+              </div>
+              <img src="assets/no43_cta_line_person.png" class="cta-card-img" style="width:90px; height:auto; flex-shrink:0;" alt="">
+            </div>
+          </div>
+          <!-- Instagram card -->
+          <div style="background:#fff; border-radius:20px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,0.1);">
+            <div style="background:linear-gradient(135deg,#833ab4 0%,#fd1d1d 55%,#fcb045 100%); padding:16px 24px; display:flex; align-items:center; gap:12px;">
+              <span style="font-size:16px; font-weight:900; color:#fff;">Instagram</span>
+              <span style="font-size:13px; color:rgba(255,255,255,0.85); font-weight:500;">で相談する</span>
+            </div>
+            <div class="cta-card-row" style="padding:20px 24px; display:flex; gap:16px; align-items:flex-end;">
+              <div class="cta-card-text" style="flex:1;">
+                <p style="font-size:14px; font-weight:700; color:#1a1a1a; margin:0 0 6px;">DMで気軽に！</p>
+                <p style="font-size:12px; color:#666; margin:0 0 16px; line-height:1.6;">ストーリーからもOK！お気軽にどうぞ。</p>
+                <a href="https://www.instagram.com/hito.oshi2026" target="_blank" rel="noopener noreferrer" class="btn-hover" style="display:inline-flex; align-items:center; gap:6px; background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); color:#fff; font-weight:700; font-size:13px; padding:11px 22px; border-radius:50px; text-decoration:none;">
+                  Instagramで相談する →
+                </a>
+              </div>
+              <img src="assets/no44_cta_instagram_person.png" class="cta-card-img" style="width:90px; height:auto; flex-shrink:0;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. FOOTER ========== -->
+  <footer style="background:#1a1a1a; padding:48px 40px 32px;">
+    <div style="max-width:1120px; margin:0 auto;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:32px;">
+        <div>
+          <img src="assets/no47_logo_footer_simple.png" style="height:40px; width:auto; filter:invert(1);" alt="HIto-Oshi">
+          <p style="font-size:13px; color:#888; margin:10px 0 0;">HIto-Oshi / ヒトオシ</p>
+        </div>
+        <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="width:48px; height:48px; background:#333; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:20px;">▲</a>
+      </div>
+      <div style="border-top:1px solid #333; padding-top:20px; text-align:center;">
+        <p style="font-size:12px; color:#666; margin:0;">© HIto-Oshi All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
 <script>
-  (function () {
-    const toggle   = document.getElementById('hb-toggle');
-    const closeBtn = document.getElementById('hb-close');
-    const menu     = document.getElementById('mobile-menu');
-    const backdrop = document.getElementById('mobile-backdrop');
-    const links    = document.querySelectorAll('.mm-link');
+function toggleFaq(el) {
+  var answer = el.nextElementSibling;
+  var icon = el.querySelector('.faq-icon');
+  if (answer.style.display === 'none' || !answer.style.display) {
+    answer.style.display = 'block';
+    icon.textContent = '−';
+  } else {
+    answer.style.display = 'none';
+    icon.textContent = '+';
+  }
+}
 
-    if (!toggle || !menu || !backdrop) return;
+(function () {
+  var hbToggle = document.getElementById('hb-toggle');
+  var hbClose = document.getElementById('hb-close');
+  var backdrop = document.getElementById('mobile-backdrop');
+  var menu = document.getElementById('mobile-menu');
+  if (!hbToggle || !menu || !backdrop) return;
 
-    const statusEl = document.getElementById('menu-status');
+  function openMenu() {
+    menu.classList.add('is-open');
+    backdrop.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+    backdrop.setAttribute('aria-hidden', 'false');
+    hbToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('menu-open');
+  }
+  function closeMenu() {
+    menu.classList.remove('is-open');
+    backdrop.classList.remove('is-open');
+    menu.setAttribute('aria-hidden', 'true');
+    backdrop.setAttribute('aria-hidden', 'true');
+    hbToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  }
 
-    function openMenu() {
-      menu.classList.add('is-open');
-      backdrop.classList.add('is-open');
-      toggle.setAttribute('aria-expanded', 'true');
-      toggle.setAttribute('aria-label', 'メニューを閉じる');
-      menu.setAttribute('aria-hidden', 'false');
-      document.body.classList.add('menu-open');
-      if (statusEl) statusEl.textContent = 'メニューを開きました';
+  hbToggle.addEventListener('click', function () {
+    if (menu.classList.contains('is-open')) closeMenu(); else openMenu();
+  });
+  if (hbClose) hbClose.addEventListener('click', closeMenu);
+  backdrop.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+  menu.querySelectorAll('.mm-link').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+})();
+
+(function () {
+  var container = document.getElementById('worksCarousel');
+  var track = document.getElementById('worksTrack');
+  if (!container || !track) return;
+
+  // --- Auto-scroll: always running in the background. Only pauses while the
+  // user is actively dragging with the mouse, since that writes scrollLeft
+  // directly and would otherwise fight with the auto increment. Wheel / touch
+  // scrolling are left alone (the tiny per-frame increment is negligible next
+  // to a real scroll gesture, so both can happen at once). ---
+  var speed = 0.6; // px per frame
+  var isDragging = false;
+
+  function loopIfNeeded() {
+    var halfWidth = track.scrollWidth / 2;
+    if (container.scrollLeft >= halfWidth) {
+      container.scrollLeft -= halfWidth;
+    } else if (container.scrollLeft <= 0) {
+      container.scrollLeft += halfWidth;
     }
-    function closeMenu() {
-      menu.classList.remove('is-open');
-      backdrop.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', 'メニューを開く');
-      menu.setAttribute('aria-hidden', 'true');
-      document.body.classList.remove('menu-open');
-      if (statusEl) statusEl.textContent = 'メニューを閉じました';
+  }
+
+  function tick() {
+    if (!isDragging) {
+      container.scrollLeft += speed;
+      loopIfNeeded();
     }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 
-    toggle.addEventListener('click', function () {
-      const isOpen = menu.classList.contains('is-open');
-      isOpen ? closeMenu() : openMenu();
-    });
-    closeBtn && closeBtn.addEventListener('click', closeMenu);
-    backdrop.addEventListener('click', closeMenu);
+  // --- Drag-to-scroll (mouse) ---
+  var startX = 0;
+  var startScrollLeft = 0;
 
-    // Close drawer after tapping any internal link, then smooth-scroll
-    links.forEach(function (link) {
-      link.addEventListener('click', function () {
-        // Let the default hash navigation happen; just close the drawer
-        // after a tiny delay so the scroll-margin-top applies cleanly.
-        closeMenu();
-      });
-    });
-
-    // Close on Escape
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
-        closeMenu();
-      }
-    });
-
-    // Auto-close if the viewport is resized past the md breakpoint
-    const mql = window.matchMedia('(min-width: 768px)');
-    mql.addEventListener('change', function (e) {
-      if (e.matches) closeMenu();
-    });
-  })();
+  container.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    container.classList.add('is-dragging');
+    startX = e.clientX;
+    startScrollLeft = container.scrollLeft;
+  });
+  window.addEventListener('mousemove', function (e) {
+    if (!isDragging) return;
+    e.preventDefault();
+    container.scrollLeft = startScrollLeft - (e.clientX - startX);
+  });
+  window.addEventListener('mouseup', function () {
+    if (!isDragging) return;
+    isDragging = false;
+    container.classList.remove('is-dragging');
+    loopIfNeeded();
+  });
+})();
 </script>
-
-<!-- #works カルーセル自動スクロール＋手動ドラッグ -->
-<script>
-  (function () {
-    var track = document.querySelector('.works-track');
-    if (!track) return;
-
-    // カードを複製してシームレスループ
-    Array.from(track.children).forEach(function (card) {
-      var clone = card.cloneNode(true);
-      clone.setAttribute('aria-hidden', 'true');
-      track.appendChild(clone);
-    });
-
-    var pos       = 0;
-    var halfWidth = 0;
-    var speed     = 0.8;   // px/frame（少し速め）
-    var hovered   = false; // ホバー中は自動停止
-    var dragging  = false; // ドラッグ中
-    var dragStartX   = 0;
-    var dragStartPos = 0;
-    var didDrag      = false; // リンク誤クリック防止フラグ
-
-    function norm(p) {
-      // pos を [0, halfWidth) に正規化
-      if (halfWidth === 0) return p;
-      p = p % halfWidth;
-      return p < 0 ? p + halfWidth : p;
-    }
-    function measure() { halfWidth = track.scrollWidth / 2; }
-
-    var wrap = track.parentElement;
-    wrap.style.cursor     = 'grab';
-    wrap.style.userSelect = 'none';
-
-    /* ── ホバー停止 ── */
-    wrap.addEventListener('mouseenter', function () { hovered = true;  });
-    wrap.addEventListener('mouseleave', function () { hovered = false; });
-
-    /* ── マウスドラッグ ── */
-    wrap.addEventListener('mousedown', function (e) {
-      dragging     = true;
-      didDrag      = false;
-      dragStartX   = e.clientX;
-      dragStartPos = pos;
-      wrap.style.cursor = 'grabbing';
-      e.preventDefault();
-    });
-    document.addEventListener('mousemove', function (e) {
-      if (!dragging) return;
-      var delta = dragStartX - e.clientX;
-      if (Math.abs(delta) > 4) didDrag = true;
-      pos = norm(dragStartPos + delta);
-    });
-    document.addEventListener('mouseup', function () {
-      if (!dragging) return;
-      dragging = false;
-      wrap.style.cursor = 'grab';
-    });
-
-    /* ── タッチドラッグ ── */
-    wrap.addEventListener('touchstart', function (e) {
-      dragging     = true;
-      didDrag      = false;
-      dragStartX   = e.touches[0].clientX;
-      dragStartPos = pos;
-    }, { passive: true });
-    wrap.addEventListener('touchmove', function (e) {
-      if (!dragging) return;
-      var delta = dragStartX - e.touches[0].clientX;
-      if (Math.abs(delta) > 4) didDrag = true;
-      pos = norm(dragStartPos + delta);
-    }, { passive: true });
-    wrap.addEventListener('touchend', function () { dragging = false; }, { passive: true });
-
-    /* ドラッグした場合はカード内リンクのクリックをキャンセル */
-    wrap.addEventListener('click', function (e) {
-      if (didDrag) { e.preventDefault(); e.stopPropagation(); didDrag = false; }
-    }, true);
-
-    /* ── アニメーションループ ── */
-    function tick() {
-      if (!dragging && !hovered) {
-        pos = norm(pos + speed);
-      }
-      track.style.transform = 'translateX(-' + pos + 'px)';
-      requestAnimationFrame(tick);
-    }
-
-    requestAnimationFrame(function () {
-      measure();
-      requestAnimationFrame(tick);
-    });
-    window.addEventListener('resize', measure);
-  })();
-</script>
-
 </body>
 </html>
